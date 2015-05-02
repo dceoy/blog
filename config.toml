@@ -1,0 +1,21 @@
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+baseurl = "http://dceoy.github.io/blog/"
+title = "Lorem Ipsum"
+canonifyurls = true
+copyright = "Copyright (c) 2015 dceoy; all rights reserved."
+
+[indexes]
+  category = "categories"
+  tag = "tags"
+
+[params]
+  description = "Interdisciplinary Science"
+  highlight="Assign a syntax highlight style"
+
+[auther]
+  name = "Near"
+  github = "dceoy"
+  twitter = "dceoy"
+  gaID = "UA-27914660-4"
