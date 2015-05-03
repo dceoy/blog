@@ -2,13 +2,19 @@
 date = "2015-04-30T00:53:48+09:00"
 draft = true
 title = "Hugo でブログを作った"
-tags = ["Hugo", "Go"]
+tags = ["Blog", "Hugo", "Go", "Wercker", "CI"]
 
 +++
 
 以前, はてなブログで Web 関連の技術ブログを書いていたが, 無料プランでは広告が出るので自分でビルドした.
 
-使用したのは Go で書かれた [Hugo](http://gohugo.io/) という静的サイトエンジン.  
+作成に際し, 知り合いのエンジニアが使っていた Python 製 [Sphinx](http://sphinx-doc.org/) ベースの [Tinkerer](http://tinkerer.me/) というツールにも興味を持ったが, reST でなく Markdown で書きたいので他のものを探した.  
+当初, 過去に試したことがあった Ruby 製の [Octopress](http://octopress.org/) を考えたが, [移行した人のブログ記事](http://deeeet.com/writing/2014/12/25/hugo/)を読んで, 最終的に [Hugo](http://gohugo.io/) を使うことにした.
+
+Hugo
+----
+
+Go で書かれた静的サイトエンジン.  
 他のツールと比較して記事の生成速度に優れている.
 
 Go の環境があれば以下でインストールできる.
@@ -17,9 +23,22 @@ Go の環境があれば以下でインストールできる.
 $ go get -v github.com/spf13/hugo
 ```
 
-ブログ作成に際し, 知り合いのエンジニアが使っていた Python 製 [Sphinx](http://sphinx-doc.org/) ベースの [Tinkerer](http://tinkerer.me/) というツールにも興味を持ったが, reST でなく Markdown で書きたいので別のものを探した.  
+Mac OS X では Homebrew からもインストール可能.  
+また, バイナリでも配布されている.
 
-当初, 過去に試したことがあった Ruby 製の [Octopress](http://octopress.org/) を考えたが, [Hugo に移行した人のブログ記事](http://deeeet.com/writing/2014/12/25/hugo/)を読んで結局こちらに落ち着く.
+記事は Markdown で書き, ビルドインサーバーでプレビューできる.
+
+Wercker CI
+----------
+
+ブログのホストには GitHub Pages を利用し, [公式のチュートリアル](http://gohugo.io/tutorials/automated-deployments/)を参考に, [Wercker CI](http://wercker.com/) でデプロイまで自動化した.  
+リポジトリが GitHub に push されると HTML をビルドし, プロジェクトページの branch にデプロイする仕組み.
+
+Wercker は [Travis CI](https://travis-ci.org/) や [CircleCI](https://circleci.com/) のような SaaS 型の CI サービスで, 現時点では GitHub や Bitbucket のプライベートリポジトリでも使用可.  
+CI の設定は wercker.yml に記述してリポジトリの root に置く.
+
+欠点
+----
 
 Hugo は操作性はシンプルで不満もないが, 選択できるテーマが少ないのは難点.  
 デザインを気にするならテーマも自分で書いた方がいいのかもしれない.
