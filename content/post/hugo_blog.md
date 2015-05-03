@@ -6,6 +6,14 @@ tags = ["Blog", "Hugo", "Go", "Wercker", "CI"]
 
 +++
 
+<div style="text-align: center;">
+  <img src="/images/hugo.png" alt="">
+  <br>
+</div>
+
+動機
+----
+
 以前, はてなブログで Web 関連の技術ブログを書いていたが, 無料プランでは広告が出るので自分でビルドした.
 
 作成に際し, 知り合いのエンジニアが使っていた Python 製 [Sphinx](http://sphinx-doc.org/) ベースの [Tinkerer](http://tinkerer.me/) というツールにも興味を持ったが, reST でなく Markdown で書きたいので他のものを探した.  
@@ -41,4 +49,9 @@ CI の設定は wercker.yml に記述してリポジトリの root に置く.
 ----
 
 Hugo は操作性はシンプルで不満もないが, 選択できるテーマが少ないのは難点.  
-デザインを気にするならテーマも自分で書いた方がいいのかもしれない.
+デザインを気にするなら自分で書いた方がいいのかも.
+
+<div style="text-align: center;">
+  <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=dceoy-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=477416366X" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</div>
+<br>
