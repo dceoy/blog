@@ -10,7 +10,7 @@ title = "このブログについて"
 生命科学の修士, Web エンジニアを経て, 現在は薬科学の博士課程に在籍.  
 医薬品を対象とするデータ解析が専門.
 
-* 関心領域:
+* 関心領域
   - 統計学
   - データマイニング
   - データベース
@@ -20,12 +20,12 @@ title = "このブログについて"
   - 医療情報
   - 医学生物学
 
-* OS:
+* OS
   - Linux (Fedora, CentOS)
   - Mac OS X
   - Windows
 
-* 言語:
+* 言語
   - R
   - Python
   - Ruby
@@ -34,3 +34,5 @@ title = "このブログについて"
   - SQL
   - Shell / Awk / Sed
   - HTML / CSS / JavaScript
+
+ご連絡は[こちら](mailto:d.narsil@gmail.com)まで  
