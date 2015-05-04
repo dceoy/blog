@@ -43,7 +43,7 @@ Wercker CI
 リポジトリが GitHub に push されると HTML をビルドし, プロジェクトページの branch にデプロイする仕組み.
 
 Wercker は [Travis CI](https://travis-ci.org/) や [CircleCI](https://circleci.com/) のような SaaS 型の CI サービスで, 現時点では GitHub や Bitbucket のプライベートリポジトリでも使用可.  
-CI の設定は wercker.yml に記述してリポジトリの root に置く.
+CI の設定は `wercker.yml` に記述してリポジトリの root に置く.
 
 欠点
 ----
@@ -55,4 +55,3 @@ Hugo は操作性はシンプルで不満もないが, 選択できるテーマ�
   <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=dceoy-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=477416366X" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 </div>
 <br>
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="dceoy">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
