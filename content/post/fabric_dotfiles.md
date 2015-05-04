@@ -29,13 +29,13 @@ Fabric は Python で書かれており, pip や easy_install からインスト
 現時点では Python 3 に対応していない.
 
 ```sh
-pip install fabric
+$ pip install fabric
 ```
 
 タスクの実行は以下の通り.
 
 ```sh
-fab [options] <command>[:arg1,arg2=val2,host=foo,hosts='h1;h2',...]
+$ fab [options] <command>[:arg1,arg2=val2,host=foo,hosts='h1;h2',...]
 ```
 
 開発環境構築の自動化
