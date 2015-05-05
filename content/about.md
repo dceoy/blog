@@ -27,7 +27,7 @@ title = "About This Blog"
 
 ##### 技術
 
-    OS        Linux, MacOSX,  Windows
+    OS        Linux, MacOSX, Windows
     言語      R, Python, Ruby, Go, Stan, SQL, Shell, Awk, Sed, HTML, CSS, JavaScript
 
 <br>
