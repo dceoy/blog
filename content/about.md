@@ -9,6 +9,8 @@ title = "About This Blog"
 
 ##### 著者
 
+[dceoy.github.io](http://dceoy.github.io/)
+
 生命科学の修士, IT エンジニアを経て, 現在は薬学の大学院博士課程.  
 医薬品を対象とするデータ解析が専門.
 
@@ -18,16 +20,15 @@ title = "About This Blog"
 - データマイニング
 - データベース
 - 機械学習
-- Web エンジニアリング
+- Web アプリケーション
 - 薬物療法
 - 医療情報
 - 医学生物学
 
-|  技術  |                                                                        |
-|:------:|:----------------------------------------------------------------------:|
-|   OS   | Linux (Fedora, CentOS) , Mac OS X,  Windows                            |
-| Editor | Vim                                                                    |
-|  言語  | R, Python, Ruby, Go, Stan, SQL, Shell, Awk, Sed, HTML, CSS, JavaScript |
+##### 技術
+
+    OS        Linux, MacOSX,  Windows
+    言語      R, Python, Ruby, Go, Stan, SQL, Shell, Awk, Sed, HTML, CSS, JavaScript
 
 <br>
 
