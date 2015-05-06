@@ -1,7 +1,7 @@
 +++
 date = "2015-05-05T02:48:32+09:00"
 draft = true
-title = "Fabric による開発環境の管理"
+title = "[Python] Fabric による開発環境の管理"
 tags = ["Fabric", "Python", "Vim", "Zsh", "Linux", "Mac"]
 
 +++
@@ -62,12 +62,9 @@ $ fab [options] <command>[:arg1,arg2=val2,host=foo,hosts='h1;h2',...]
 ------
 
 Fabric は学習コストが小さい割に強力な自動化ツールとなる.  
-シェルスクリプトを書けるのであれば, Python を書いたことがない人でも比較的容易に使えると思われる.  
-Python のランタイムは Linux や Mac なら最初からあるので, 是非試していただきたい.
-
-このリポジトリに関しては飽くまで個人使用のために作っているので, 参考にされる方は各々に適した設定で書いていただければと思う.
+シェルスクリプトを書けるのであれば, Python を書いた経験のない人でも難しくはないだろうし, Python のランタイムは Linux や Mac なら最初からあるので, 試し易いと思う.
 
 <div style="text-align: center;">
-  <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=hue-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=4873113938" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+  <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=dceoy-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=4873113938" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
 </div>
 <br>

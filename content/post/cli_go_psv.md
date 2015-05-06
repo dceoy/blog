@@ -1,0 +1,70 @@
++++
+date = "2015-05-07T00:15:37+09:00"
+draft = true
+title = "[Go] CSV を任意のセパレーターに変換して出力するコマンドを作った"
+tags = ["cli.go", "Go"]
+
++++
+
+[dceoy/psv](https://github.com/dceoy/psv)
+
+経緯
+----
+
+一般的なデータ処理の課題では, わざわざコードを書かなくてもシェル上で済む, ということがよくある.  
+ワンライナーで問題が一瞬に解決すると嬉しい.
+
+そんなスタンスで, CSV のデータをコマンドラインで処理する機会があった.  
+単純に考えれば, Awk でセパレーターをカンマにセットすれば, 各フィールドの値を取れる.  
+しかしそれでは, 以下のようにフィールド内にカンマがある場合に正しくパースできない.
+
+    "fugit","quo, dolor","quos"
+
+CSV は一見簡単に見えるが, これ以外にも[考慮することが実は多く](http://postd.cc/so-you-want-to-write-your-own-csv-code/), 安易にパースしない方がいいらしい.
+
+そこで, 既存のパーサーを使って CSV を読むコマンドを作った.
+
+実装した機能は, 「フィールドセパレーターのカンマを任意の値に換えて出力する」のみ.  
+一旦ユニークなセパレーターで出力すれば, 後は Awk に渡せるのでハッピー.
+
+cli.go
+------
+
+今回のものは軽いなので, 以前から興味のあった Go で書くことにした.  
+一応コマンドとしての体裁が欲しいので [cli.go](https://github.com/codegangsta/cli) というパッケージを使った.
+
+cli.go はコマンドラインツールのフレームワークのようなもので, 迅速な開発を助けてくれる.
+
+psv
+---
+
+Go の環境がある場合, 以下でインストールする.
+
+```sh
+$ go get github.com/dceoy/psv
+```
+
+`-s` オプションでカンマに置き換えるセパレーターを渡して使う.  
+結果は標準出力に出る.
+
+```sh
+$ psv -s [separator] example.csv
+```
+
+`-s` を設定しない場合はカンマがセパレーターとして渡る.  
+入力は 1 つの CSV ファイルを想定しているが, 標準入力も受け取れる.
+
+内部では Go の encoding/csv で CSV を読んでいる.
+
+まとめ
+------
+
+最低限の機能しかないが, CSV を SQLite に流し込むような処理をコマンドラインでできるようになって便利になった.
+
+Go でツールを書くのはこれが初めてだったが, 時間も然程かからなかったと思う,  
+似たような課題があれば, また Go で書きたい.
+
+<div style="text-align: center;">
+  <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=dceoy-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=4774166278" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</div>
+<br>

@@ -7,12 +7,13 @@ tags = ["R"]
 +++
 
 R のコンソールから対話式で CRAN ミラーを選び, パッケージをインストールするのは面倒だと思う.  
-以下のコードはその課題を解決し, R スクリプト内で処理が完結する.
+以下のように書けば R スクリプト内で処理が完結する.
 
 <script src="https://gist.github.com/dceoy/c472e300cd0423023869.js"></script>
-<br>
 
-これは, ミラーの設定に加え, パッケージのインストールとロードを含む.  
 スクリプトの上流に貼れば, ローカルにパッケージがなくても自動的に落としてくれるので, インストール済か事前に確認する必要がなくなる.
 
+<div style="text-align: center;">
+  <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=dceoy-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=4873116511" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
+</div>
 <br>
