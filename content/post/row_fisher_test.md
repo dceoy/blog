@@ -31,21 +31,14 @@ Fisher test on each row of data table
 
 下記のコードは, 分割表のセルの数値を束ねた data.table の各行に fisher.test を実行し, p 値, オッズ比と信頼区間を含めた data.table を返す.
 
-<script src="https://gist.github.com/dceoy/4d75564e5f44702ee3bc.js?file=row_fisher_test.R"></script>
+<script src="https://gist.github.com/dceoy/4d75564e5f44702ee3bc.js?file=row_fisher_dt.R"></script>
 
 parallel は `detectCores()` に使った.
 
 下記は dplyr, data.table, snow を使わないコード.  
 並列化はしていない. `row_fisher` は上と同じ関数.
 
-```R
-# generate sample data for test
-test_df <- data.frame(matrix(abs(ceiling(rnorm(40000) * 1000)), ncol = 4))
-colnames(test_df) <- c('a', 'b', 'c', 'd')
- 
-# run
-p <- cbind(test_df, t(apply(test_df, 1, row_fisher)))
-```
+<script src="https://gist.github.com/dceoy/4d75564e5f44702ee3bc.js?file=row_fisher_df.R"></script>
 
 まとめ
 ------
