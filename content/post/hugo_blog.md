@@ -7,12 +7,9 @@ tags = ["Hugo", "Go", "Wercker", "CI", "GitHub"]
 +++
 
 <div style="text-align: center;">
-  <img src="/images/hugo.png" alt="">
-  <br>
+  <img src="/images/hugo.png" alt="logo">
 </div>
-
-動機
-----
+<br>
 
 以前, はてなブログで Web 関連の技術ブログを書いていたが, 無料プランでは広告が出るので自分でビルドした.
 

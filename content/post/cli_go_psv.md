@@ -6,10 +6,7 @@ tags = ["cli.go", "Go"]
 
 +++
 
-[dceoy/psv](https://github.com/dceoy/psv)
-
-経緯
-----
+##### [dceoy/psv](https://github.com/dceoy/psv)
 
 一般的なデータ処理の課題では, わざわざコードを書かなくてもシェル上で済む, ということがよくある.  
 ワンライナーで問題が一瞬に解決すると嬉しい.
