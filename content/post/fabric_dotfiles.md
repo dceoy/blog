@@ -44,13 +44,13 @@ $ fab [options] <command>[:arg1,arg2=val2,host=foo,hosts='h1;h2',...]
 特に用途で環境を分けていないので, `rhel_env` と `osx_env` のコマンドは全部盛り.  
 例えば `rhel_env` は, この記事を書いた時点で, 以下を自動化している.
 
-- yum でパッケージをインストール
-- シェルを Zsh へ変更
-- dotfiles を設置
-- Python, Ruby, Node.js のバージョン管理ツールを導入
-- Vim のプラグイン管理ツールを導入
-- Python, Ruby, Node.js, Go, R のパッケージをインストール
-- Vim のプラグインをインストール
+> - yum でパッケージをインストール
+> - シェルを Zsh へ変更
+> - dotfiles を設置
+> - Python, Ruby, Node.js のバージョン管理ツールを導入
+> - Vim のプラグイン管理ツールを導入
+> - Python, Ruby, Node.js, Go, R のパッケージをインストール
+> - Vim のプラグインをインストール
 
 これらがコマンド 1 つで済むので, 環境構築はかなり省力化できた.  
 また, 簡易的ではあるが冪等性も考慮しているので, 一度作った環境にも適用できる.
