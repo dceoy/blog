@@ -2,7 +2,7 @@
 date = "2015-05-08T00:28:33+09:00"
 draft = true
 title = "[R] 行列の各行で Fisher の正確な検定"
-tags = ["r", "fisher.test", "data.table", "dplyr", "snow", "statistics"]
+tags = ["fisher.test", "r", "snow", "statistics"]
 
 +++
 
