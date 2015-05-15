@@ -16,19 +16,19 @@ title = "About This Blog"
 
 ##### 関心のある領域
 
-- 統計学
-- データマイニング
-- データベース
-- 機械学習
-- Web アプリケーション
-- 薬物療法
-- 医療情報
-- 医学生物学
+> - 統計学
+> - データマイニング
+> - データベース
+> - 機械学習
+> - Web アプリケーション
+> - 薬物療法
+> - 医療情報
+> - 医学生物学
 
 ##### 技術
 
     OS        Linux, MacOSX, Windows
-    言語      R, Python, Ruby, Go, Stan, SQL, Shell, Awk, Sed, HTML, CSS, JavaScript
+    言語      R, Python, Go, Stan, SQL, Shell, Awk, Sed, Ruby, HTML, CSS, JavaScript
 
 <br>
 
