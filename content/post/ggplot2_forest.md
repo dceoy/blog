@@ -24,11 +24,13 @@ forest plot using ggplot2
 複数のオッズ比の点推定値と信頼区間の図示に主眼を置いた.  
 meta-analysis では, 各研究の重みや菱型で表す統合オッズ比などを含めるケースもあるが, 自分の用途では必要なかったのでそれらは対応していない.
 
-以下は描画コードと読み込むオッズ比のサンプルデータ.  
-ggplot2 は forest plot を想定した関数は備えていないようだったので `geom_pointrange` を利用した.
+以下は描画コードと読み込むオッズ比のサンプル.
 
 <script src="https://gist.github.com/dceoy/a3c63540a8722afbc4dd.js?file=forest_plot.R"></script>
 <script src="https://gist.github.com/dceoy/a3c63540a8722afbc4dd.js?file=odds_ratio.csv"></script>
+
+ggplot2 は forest plot を想定した関数は備えていないようだったので, 点と区間を表現する `geom_pointrange` を使った.  
+オッズ比のサンプルは[以前書いた Fisher exact test の記事と同じ方法](/post/row_fisher_test/)で作った.
 
 下図は出力された SVG.
 
