@@ -11,8 +11,10 @@ title = "About This Blog"
 
 [dceoy.github.io](http://dceoy.github.io/)
 
-生命科学の修士, IT エンジニアを経て, 現在は薬学の大学院博士課程.  
 医薬品を対象とするデータ解析が専門.
+
+生命科学の修士, IT エンジニアを経て, 現在は薬学の大学院博士課程に在籍.  
+論文を書きつつ求職活動中.
 
 ##### 関心のある領域
 
@@ -27,8 +29,26 @@ title = "About This Blog"
 
 ##### 技術
 
-    OS        Linux, MacOSX, Windows
-    言語      R, Python, Go, Stan, SQL, Shell, Awk, Sed, Ruby, HTML, CSS, JavaScript
+OS
+
+> - Linux
+> - MacOSX
+> - Windows
+
+言語
+
+> - R
+> - Python
+> - Go
+> - Stan
+> - SQL
+> - Shell
+> - Awk
+> - Sed
+> - Ruby
+> - HTML
+> - CSS
+> - JavaScript
 
 <br>
 
