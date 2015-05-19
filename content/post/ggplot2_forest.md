@@ -8,7 +8,7 @@ tags = ["ggplot2", "r", "visualization", "statistics"]
 
 forest plot は, オッズ比や相対リスクの点推定値と信頼区間を順に並べる描画方法で, [meta-analysis](http://www.med.osaka-u.ac.jp/pub/kid/clinicaljournalclub8.html) の可視化にしばしば用いられる.
 
-これを R で簡潔に描くライブラリを探したが, 使い易いものがなかったので [ggplot2](http://ggplot2.org/) でコードを書いた.
+これを R で簡潔に描くライブラリを探したが, 扱いやすいものがなかったので [ggplot2](http://ggplot2.org/) でコードを書いた.
 
 ggplot2
 -------
