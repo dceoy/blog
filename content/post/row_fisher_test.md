@@ -35,7 +35,7 @@ fisher.test
 
 2 x 2 分割表 (2 x 2 contingency table) の独立性の検定には, 一般的に x<sup>2</sup> 検定 (Chi-square test) が用いられるが, これは頻度が少なくなると近似が悪くなるので, その場合は正確な p 値を計算する Fisher の正確な検定 (Fisher exact test) を行う方が適している.
 
-R では組み込みの [fisher.test](https://stat.ethz.ch/R-manual/R-patched/library/stats/html/fisher.test.html) で p 値を算出できる.  
+R では組み込みの [fisher.test](http://www.inside-r.org/r-doc/stats/fisher.test) で p 値を算出できる.  
 この関数はオッズ比と信頼区間も出力するが, こちらは[計算方法が異なる](http://oku.edu.mie-u.ac.jp/~okumura/stat/fishertest.html)ので注意が必要.
 
 こうした正確な検定は計算量が多いため, 処理に時間がかかる.

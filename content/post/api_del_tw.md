@@ -29,7 +29,7 @@ Twitter API のユーザータイムライン取得は, [最新の 3,200 ツイ�
 Your Twitter Archive
 --------------------
 
-Twitter では[自分のツイートのアーカイブ](https://support.twitter.com/articles/20170160-downloading-your-twitter-archive)が `tweets.zip` として提供される.  
+Twitter では[自分のツイートのアーカイブ](https://support.twitter.com/articles/20170160-downloading-your-twitter-archive)が zip ファイルで提供される.  
 中身は HTML や JavaScript で, `index.html` を開いてツイートをブラウズする.
 
 ここで個々のツイートのリンクを開けば URL から Status ID を確認可能.  
