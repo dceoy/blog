@@ -6,9 +6,9 @@ tags = ["glm", "confint", "r", "faraway", "statistics"]
 
 +++
 
-[R でのロジスティック回帰](http://www.ats.ucla.edu/stat/r/dae/logit.htm)には, 一般化線形モデル (Generalized Linear Model; GLM) を扱う [glm](http://www.inside-r.org/r-doc/stats/glm) をよく使うが, この返り値に [confint](http://www.inside-r.org/r-doc/stats/confint) を当てれば回帰係数の信頼区間 (Confidence Interval; CI) を算出できる.
+R でのロジスティック回帰には, 一般化線形モデル (Generalized Linear Model; GLM) を扱う [glm](http://www.inside-r.org/r-doc/stats/glm) をよく使うが, この返り値に [confint](http://www.inside-r.org/r-doc/stats/confint) を当てれば回帰係数の信頼区間 (Confidence Interval; CI) を算出できる.
 
-以下では, パッケージ [faraway](http://cran.r-project.org/web/packages/faraway/index.html) で得られるピマインディアンの糖尿病検査のデータ `pima` を例に, ロジスティック回帰を行い, 係数の信頼区間を計算した.
+今回は, パッケージ [faraway](http://cran.r-project.org/web/packages/faraway/index.html) で得られるピマインディアンの糖尿病検査のデータ `pima` を例に, ロジスティック回帰を行い, 係数の信頼区間を計算した.
 
 <script src="https://gist.github.com/dceoy/b33beb466680808f3d6e.js?file=glm_ci.R"></script>
 
