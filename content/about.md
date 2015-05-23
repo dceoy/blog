@@ -50,5 +50,7 @@ OS
 > - CSS
 > - JavaScript
 
-<br>
 
+<script>
+  amzn_assoc_default_search_key = "data analysis";
+</script>

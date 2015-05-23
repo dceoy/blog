@@ -25,7 +25,7 @@ glm オブジェクトに適用する `predict()` の実体は [predict.glm](htt
 
 今回は信頼区間の計算も自前でしているが, lm オブジェクトを引数に取る [predict.lm](http://www.inside-r.org/r-doc/stats/predict.lm) などには信頼区間や予測区間を出すオプションがある. (predict.glm にはないらしい.)
 
-<div style="text-align: center;">
-  <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=dceoy-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=4873115337" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</div>
-<br>
+
+<script>
+  amzn_assoc_default_search_key = "generalized linear model";
+</script>

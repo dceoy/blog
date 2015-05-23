@@ -47,7 +47,7 @@ ggplot2 は forest plot を想定した関数は備えていないようだっ�
 
 このコードを最初に書いた 2014 年春頃は forest plot 専用のパッケージを見かけなかったが, 最近は[あるらしい](http://cran.r-project.org/web/packages/forestplot/vignettes/forestplot.html).
 
-<div style="text-align: center;">
-  <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=dceoy-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=4873116538" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</div>
-<br>
+
+<script>
+  amzn_assoc_default_search_key = "ggplot2";
+</script>
