@@ -1,7 +1,7 @@
 +++
 date = "2015-05-05T02:48:32+09:00"
 draft = true
-title = "[Python] Fabric による開発環境の管理"
+title = "Fabric による開発環境の管理"
 tags = ["fabric", "python", "vim", "zsh", "linux", "mac"]
 
 +++

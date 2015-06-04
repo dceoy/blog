@@ -1,7 +1,7 @@
 +++
 date = "2015-05-09T13:57:52+09:00"
 draft = true
-title = "[Web] Gist に置いた HTML を Web ページとして表示する"
+title = "Gist に置いた HTML を Web ページとして表示する"
 tags = ["github", "gist", "html", "css", "javascript", "web"]
 
 +++

@@ -1,12 +1,12 @@
 +++
 date = "2015-06-03T19:19:34+09:00"
 draft = true
-title = "[R] MCMC によるロジステック回帰"
-tags = ["mcmcpack", "r", "mass", "statistics"]
+title = "MCMC によるロジステック回帰"
+tags = ["mcmcpack", "r", "mcmc", "statistics"]
 
 +++
 
-マルコフ連鎖モンテカルロ法 (Markov chain Monte Carlo; MCMC) によるベイズ推定を行うソフトウェアとしては, ギブスサンプラー (Gibbs sampler) の [BUGS (WinBUGS, OpenBUGS)](http://www.mrc-bsu.cam.ac.uk/software/bugs/) や [JAGS](http://mcmc-jags.sourceforge.net/) が有名であり, また近年では, ハミルトニアンモンテカルロ法 (Hamilton Monte Carlo; HMC) に基づく [Stan](http://mc-stan.org/) も勢いがある.
+マルコフ連鎖モンテカルロ法 (Markov chain Monte Carlo; MCMC) によるベイズ推定を行うソフトウェアとしては, ギブスサンプラー (Gibbs sampler) の [BUGS (WinBUGS, OpenBUGS)](http://www.mrc-bsu.cam.ac.uk/software/bugs/) や [JAGS](http://mcmc-jags.sourceforge.net/) が有名であり, また近年では, ハミルトニアンモンテカルロ法 (Hamiltonian Monte Carlo; HMC) に基づく [Stan](http://mc-stan.org/) も勢いがある.
 
 BUGS は枯れていて実績があり, Stan は従来の MCMC サンプラーと比較して高速・高効率なサンプリングが可能であるなど, それぞれメリットはあるが, いずれもその言語でモデルを記述する必要があるため, 初学者には多少敷居が高い.
 

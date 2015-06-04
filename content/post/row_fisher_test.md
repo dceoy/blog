@@ -1,7 +1,7 @@
 +++
 date = "2015-05-08T00:28:33+09:00"
 draft = true
-title = "[R] 行列の各行で Fisher の正確な検定"
+title = "行列の各行で Fisher の正確な検定"
 tags = ["fisher.test", "r", "snow", "statistics"]
 
 +++
@@ -27,7 +27,7 @@ tags = ["fisher.test", "r", "snow", "statistics"]
   </tbody>
 </table>
 
-複数の 2 x 2 分割表に対して Fisher の検定で正確な p 値を計算したい, という課題にぶつかったので, 各セルの数値を束ねた行列に対して p 値を算出するコードを書いた.  
+R で複数の 2 x 2 分割表に対して Fisher の検定で正確な p 値を計算したい, という課題にぶつかったので, 各セルの数値を束ねた行列に対して p 値を算出するコードを書いた.  
 stackoverflow にも [似た質問](http://stackoverflow.com/questions/14983579/running-a-fisher-test-on-each-row-of-a-data-frame-in-r) があったので参照のこと.
 
 fisher.test

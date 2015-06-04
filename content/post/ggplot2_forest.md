@@ -1,7 +1,7 @@
 +++
 date = "2015-05-11T23:56:03+09:00"
 draft = true
-title = "[R] ggplot2 で描く forest plot"
+title = "ggplot2 で描く forest plot"
 tags = ["ggplot2", "r", "visualization", "statistics"]
 
 +++
