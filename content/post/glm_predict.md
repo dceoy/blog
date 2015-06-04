@@ -2,7 +2,7 @@
 date = "2015-05-22T19:02:44+09:00"
 draft = true
 title = "[R] ロジスティック回帰に基づく予測と可視化"
-tags = ["glm", "predict", "r", "faraway", "statistics"]
+tags = ["glm", "predict", "r", "ggplot2", "faraway", "statistics"]
 
 +++
 
@@ -27,5 +27,5 @@ glm オブジェクトに適用する `predict()` の実体は [predict.glm](htt
 
 
 <script>
-  amzn_assoc_default_search_key = "generalized linear model";
+  amzn_assoc_default_search_key = "ロジスティック回帰";
 </script>

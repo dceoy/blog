@@ -74,5 +74,5 @@ Fisher の検定など分割表については以下の書籍が参考になっ�
 
 
 <script>
-  amzn_assoc_default_search_key = "the art of r programming";
+  amzn_assoc_default_search_key = "r programming";
 </script>
