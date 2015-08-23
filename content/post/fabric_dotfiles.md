@@ -6,7 +6,8 @@ tags = ["fabric", "python", "vim", "zsh", "linux", "mac"]
 
 +++
 
-##### [dceoy/dotfiles](https://github.com/dceoy/dotfiles)
+
+##### [dceoy/fabkit](https://github.com/dceoy/fabkit)
 
 Linux や Mac を使うエンジニアが "." から始まる設定ファイルをクラウドで管理することはあると思う.  
 自分も Zsh や Vim を使うので `.zshrc` や `.vimrc` などを GitHub に置いている.  
@@ -60,6 +61,11 @@ $ fab [options] <command>[:arg1,arg2=val2,host=foo,hosts='h1;h2',...]
 
 Fabric は学習コストが小さい割に強力な自動化ツールとなる.  
 シェルスクリプトを書けるのであれば, Python を書いた経験のない人でも難しくはないだろうし, Python のランタイムは Linux や Mac なら最初からあるので, 試しやすいと思う.
+
+---
+
+2015-08-23 追記:  
+リポジトリ名を dotfiles => fabkit へ変更
 
 
 <script>

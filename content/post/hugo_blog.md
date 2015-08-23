@@ -31,7 +31,12 @@ $ go get -v github.com/spf13/hugo
 Mac OS X では Homebrew からもインストール可能.  
 また, バイナリでも配布されている.
 
-記事は Markdown で書き, ビルドインサーバーでプレビューできる.
+記事は Markdown で書き, ビルドインサーバーでプレビューできる.  
+以下はテーマ nofancy を指定してサーバーを起動する例.
+
+```sh
+$ hugo server -w -D -t nofancy
+```
 
 Wercker CI
 ----------
