@@ -2,10 +2,9 @@
 date = "2015-05-05T02:48:32+09:00"
 draft = true
 title = "Fabric による開発環境の管理"
-tags = ["fabric", "python", "vim", "zsh", "linux", "mac"]
+tags = ["fabric", "python", "vim", "zsh", "linux", "fedora", "centos", "macosx"]
 
 +++
-
 
 ##### [dceoy/fabkit](https://github.com/dceoy/fabkit)
 
@@ -20,14 +19,14 @@ Fabric
 ------
 
 サーバーのプロビジョニングというば [Chef](https://www.chef.io/chef/) や [Puppet](https://puppetlabs.com/) が有名で, 最近では [Ansible](http://www.ansible.com/) も人気がある.  
-Fabric も同様, プロビジョニングの自動化に使えるが, 上記のものより小さくシンプルで, SSH 経由でシェルコマンドを実行するツールである, と自分は理解している.  
+Fabric も同様, プロビジョニングの自動化に使えるが, 上記のものより小さくシンプルで, SSH 経由でシェルコマンドを実行するツール.  
 そのシンプルさ故, 学習コストが小さくて済むのが特徴.
 
 Fabric は Python で書かれており, pip や easy_install からインストールできる.  
 現時点では Python 3 に対応していない.
 
 ```sh
-$ pip install fabric
+$ pip install -U fabric
 ```
 
 タスクの実行は以下の通り.
@@ -65,7 +64,8 @@ Fabric は学習コストが小さい割に強力な自動化ツールとなる.
 ---
 
 2015-08-23 追記:  
-リポジトリ名を dotfiles => fabkit へ変更
+- `rhel_env`, `osx_env` は `init_dev` へ統合
+- リポジトリ名を dotfiles => fabkit へ変更
 
 
 <script>

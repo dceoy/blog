@@ -51,7 +51,7 @@ $ psv -s [separator] example.csv
 `-s` を設定しない場合はカンマがセパレーターとして渡る.  
 入力は 1 つの CSV ファイルを想定しているが, 標準入力も受け取れる.
 
-内部では Go の encoding/csv で CSV を読んでいる.
+内部では Go の `encoding/csv` で CSV を読んでいる.
 
 まとめ
 ------
@@ -61,6 +61,10 @@ $ psv -s [separator] example.csv
 Go でツールを書くのはこれが初めてだったが, 時間も然程かからなかったと思う,  
 似たような課題があれば, また Go で書きたい.
 
+---
+
+2015-12-08 追記:  
+- コマンドラインから CSV を扱う既存のツールとしては Python 製の csvkit が有名らしい.
 
 <script>
   amzn_assoc_default_search_key = "golang";

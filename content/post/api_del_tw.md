@@ -41,7 +41,8 @@ Twitter では[自分のツイートのアーカイブ](https://support.twitter.
 集約は Sed で済む.
 
 ```sh
-$ cat archive/data/js/tweets/*.js | sed -e 's/^Grailbird.*$/\[/' | sed -e 's/Grailbird.*$/,/g' > data/tweets.json
+$ sed -e 's/^Grailbird.*$/\[/' archive/data/js/tweets/*.js \
+    | sed -e 's/Grailbird.*$/,/g' > data/tweets.json
 $ echo ']' >> data/tweets.json
 ```
 
