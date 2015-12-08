@@ -2,11 +2,11 @@ box: wercker/default
 build:
   steps:
     - arjen/hugo-build:
-        version: 0.12
+        version: 0.15
         theme: nofancy
         flags: --buildDrafts=true
 deploy:
   steps:
-    - lukevivier/gh-pages@0.2.1:
+    - lukevivier/gh-pages:
         token: $GIT_TOKEN
         basedir: public
