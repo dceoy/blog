@@ -28,26 +28,22 @@ title = "About This Blog"
 
 ##### 技術
 
-OS
+> - OS
+>   - Linux
+>   - MacOSX
+>   - Windows
 
-> - Linux
-> - MacOSX
-> - Windows
-
-言語
-
-> - R
-> - Python
-> - Go
-> - Stan
-> - SQL
-> - Shell
-> - Awk
-> - Sed
-> - Ruby
-> - HTML
-> - CSS
-> - JavaScript
+> - 言語
+>   - R
+>   - Python
+>   - Go
+>   - Stan
+>   - SQL
+>   - Shell
+>   - Sed / Awk
+>   - Ruby
+>   - HTML / CSS
+>   - JavaScript
 
 
 <script>

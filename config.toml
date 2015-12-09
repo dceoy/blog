@@ -12,7 +12,7 @@ copyright = "Copyright (c) 2015 dceoy; all rights reserved."
 
 [params]
   description = "Interdisciplinary Science"
-  highlight="Assign a syntax highlight style"
+  highlight="atelier-lakeside.light"
 
 [auther]
   name = "Nar"
