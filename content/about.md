@@ -13,7 +13,9 @@ title = "About This Blog"
 
 医薬品関連のデータ解析が専門.
 
-生命科学の修士, IT エンジニアを経て, 現在は薬学系の大学院博士課程に在籍.
+生命科学の修士, IT エンジニアを経て, 現在は薬学系の大学院博士課程に在籍しながら研究所勤務.
+
+[Wishlist](https://www.amazon.co.jp/registry/wishlist/19AO83BWSSZYG/ref=cm_sw_r_fa_ws_yCBAwbYSCBQHX)
 
 ##### 関心のある領域
 
