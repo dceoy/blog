@@ -6,6 +6,11 @@ tags = ["fabric", "python", "vim", "zsh", "linux", "fedora", "centos", "macosx"]
 
 +++
 
+<div style="text-align: center;">
+  <img src="../../images/fabric.png" alt="logo">
+</div>
+<br>
+
 ##### [dceoy/fabkit](https://github.com/dceoy/fabkit)
 
 Linux や Mac を使うエンジニアが "." から始まる設定ファイルをクラウドで管理することはあると思う.  
