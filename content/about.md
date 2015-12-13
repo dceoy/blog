@@ -12,7 +12,7 @@ title = "About This Blog"
 [dceoy.github.io](http://dceoy.github.io/)
 
 医薬系のデータ解析が専門.  
-研究所に勤務しながら, 大学院博士課程にも在籍中.
+研究所に勤務しながら, 薬学系の大学院にも在籍. D 論つらい.
 
 [wishlist](https://www.amazon.co.jp/registry/wishlist/19AO83BWSSZYG/ref=cm_sw_r_fa_ws_yCBAwbYSCBQHX)
 

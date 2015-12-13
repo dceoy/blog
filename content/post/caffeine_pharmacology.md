@@ -16,19 +16,18 @@ tags = ["coffee", "caffeine", "pharmacology", "medicine", "advent_calendar"]
 私はよく, 生豆の店で焙煎してもらった豆を買い, 家で挽いてハンドドリップで抽出して飲んでいます.  
 豆は毎回別の産地のものを買って, 違いを味わうのがちょっとした楽しみです.
 
-コーヒーは好きなのですが, 空腹時に何杯も飲むと調子が悪くなることがあります.  
-今回の記事はその原因であろう成分, カフェインについて書こうと思います.
+そのようにコーヒーは好きなのですが, 空腹時に何杯も飲むと調子が悪くなることがあります.  
+今回の記事はその原因であろう成分, カフェインについて書きます.
 
 Caffeine
 --------
 
-カフェインは, コーヒー (0.8 ~ 2.3 %), 茶 (2 ~ 4 %), ココア (0.05 ~ 0.8 %), コーラ (2 ~ 4 %) など嗜好品として最も多く用いられる中枢興奮薬.  
-また, 頭痛薬 (特に片頭痛, 高血圧性頭痛) や風邪薬に配合され, 医薬品としても用いられる.
+カフェインは, コーヒー (0.8 ~ 2.3 %), 茶 (2 ~ 4 %), ココア (0.05 ~ 0.8 %), コーラ (2 ~ 4 %) など嗜好品として最も多く用いられる中枢興奮薬であり, また, 頭痛薬 (特に片頭痛, 高血圧性頭痛) や風邪薬に配合され, 医薬品としても用いられる.
 
 ##### 化学構造
 
 ![structure](../../images/caffeine.png")
-カフェイン. キサンチン誘導体. アルカロイド. 水に微溶.
+カフェイン. キサンチン誘導体. アルカロイド. 水には微溶.
 
 キサンチンのメチル誘導体としては他にテオフィリン, テオブロミンがある.  
 テオフィリンは茶, テオブロミンはココアなどに含まれる.
@@ -95,10 +94,11 @@ Caffeine
 --------
 
 1.  [田中 千賀子, 加藤 隆一 (2007). NEW 薬理学 改訂 5 版, 南江堂.](https://www.amazon.co.jp/dp/4524260889?tag=d4i03-22&camp=1027&creative=7407&linkCode=as4&creativeASIN=4524260889&adid=1P222BQPSD2BZV67CGPW&)
-2.  Caffeine, Wikipedia. [https://en.wikipedia.org/wiki/Caffeine](https://en.wikipedia.org/wiki/Caffeine)
-3.  Adenosine, Wikipedia. [https://en.wikipedia.org/wiki/Adenosine](https://en.wikipedia.org/wiki/Adenosine)
-4.  Sumathi Reddy (2013), カフェインの禁断症状、米精神医学会の新基準で診断名の1つに (A Coffee Withdrawal Diagnosis), WSJ. [http://jp.wsj.com/articles/SB10001424127887324449604578538770871505996](http://jp.wsj.com/articles/SB10001424127887324449604578538770871505996)
-5.  Heidi Mitchell (2014), コーヒー過飲すればカフェイン中毒 功罪はなお議論の的 (How Much Caffeine Is Too Much?), WSJ. [http://jp.wsj.com/articles/SB12072851737206304029704580241490656021642](http://jp.wsj.com/articles/SB12072851737206304029704580241490656021642)
+2.  [Caffeine, Wikipedia.](https://en.wikipedia.org/wiki/Caffeine)
+3.  [Adenosine, Wikipedia.](https://en.wikipedia.org/wiki/Adenosine)
+4.  [Sumathi Reddy (2013), カフェインの禁断症状、米精神医学会の新基準で診断名の1つに (A Coffee Withdrawal Diagnosis), WSJ.](http://jp.wsj.com/articles/SB10001424127887324449604578538770871505996)
+5.  [カフェイン過剰摂取で少女死亡、遺族が栄養飲料製造会社を提訴, AFPBB News.](http://www.afpbb.com/articles/-/2908471?pid=9720273)
+6.  [Heidi Mitchell (2014), コーヒー過飲すればカフェイン中毒 功罪はなお議論の的 (How Much Caffeine Is Too Much?), WSJ.](http://jp.wsj.com/articles/SB12072851737206304029704580241490656021642)
 
 あとがき
 -------
