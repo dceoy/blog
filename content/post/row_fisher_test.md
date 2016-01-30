@@ -62,15 +62,10 @@ parallel は `detectCores()` に使った.
 R では for ループを使いたくないので apply のファミリーで何とかする.  
 snow で並列化もしているのでそこそこ速い.
 
-参考
-----
+参考文献
+--------
 
-Fisher の検定など分割表については以下の書籍が参考になった.
-
-<div style="text-align: center;">
-  <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?lt1=_blank&bc1=000000&IS2=1&bg1=FFFFFF&fc1=000000&lc1=0000FF&t=dceoy-22&o=9&p=8&l=as4&m=amazon&f=ifr&ref=ss_til&asins=4254125461" style="width:120px;height:240px;" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe>
-</div>
-<br>
+1.  [丹後 俊郎 (1993). 新版 医学への統計学 (統計ライブラリー), 朝倉書店.](http://www.amazon.co.jp/dp/4254125461/ref=as_sl_pc_tf_lc?tag=dceoy-22&camp=1027&creative=7407&linkCode=as4&creativeASIN=4254125461&adid=0EGQ4BEFAAWWB3GKNYP5&&ref-refURL=http%3A%2F%2Frcm-fe.amazon-adsystem.com%2Fe%2Fcm%3Flt1%3D_blank%26bc1%3D000000%26IS2%3D1%26bg1%3DFFFFFF%26fc1%3D000000%26lc1%3D0000FF%26t%3Ddceoy-22%26o%3D9%26p%3D8%26l%3Das4%26m%3Damazon%26f%3Difr%26ref%3Dss_til%26asins%3D4254125461)
 
 
 <script>
