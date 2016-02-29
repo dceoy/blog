@@ -2,7 +2,7 @@
 date = "2015-05-21T05:12:28+09:00"
 draft = true
 title = "R でのロジスティック回帰と係数の信頼区間"
-tags = ["glm", "r", "confint", "statistics"]
+tags = ["glm", "r", "statistics"]
 
 +++
 

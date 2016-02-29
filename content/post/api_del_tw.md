@@ -2,7 +2,7 @@
 date = "2015-05-19T22:16:50+09:00"
 draft = true
 title = "Twitter API から取得できない古いツイートを削除する"
-tags = ["python", "requests_oauthlib", "sed", "twitter", "api"]
+tags = ["python", "twitter", "api"]
 
 +++
 
@@ -64,6 +64,12 @@ Requests-OAuthlib
 
 コンパクトに収まったと思う.  
 Twitter の REST APIs は流石によくできていて利用しやすい.
+
+---
+
+2016-02-29 追記:
+
+- [コードを Python に集約](https://github.com/dceoy/del-tw). ZIP を引数に JSON を生成せず実行する.
 
 
 <script>

@@ -43,7 +43,7 @@ $ fab [options] <command>[:arg1,arg2=val2,host=foo,hosts='h1;h2',...]
 開発環境構築の自動化
 --------------------
 
-書いたコマンドについては [README](https://github.com/dceoy/dotfiles) に記載している.  
+書いたコマンドについては [README](https://github.com/dceoy/fabkit) に記載している.  
 設定やパッケージはリポジトリ内の `config.yml` で管理するようにした.
 
 特に用途で環境を分けていないので, `rhel_env` と `osx_env` のコマンドは全部盛り.  
@@ -68,9 +68,10 @@ Fabric は学習コストが小さい割に強力な自動化ツールとなる.
 
 ---
 
-2015-08-23 追記:  
+2015-08-23 追記:
+
+- [リポジトリを dotfiles => fabkit へ変更](https://github.com/dceoy/fabkit)
 - `rhel_env`, `osx_env` は `init_dev` へ統合
-- リポジトリ名を dotfiles => fabkit へ変更
 
 
 <script>

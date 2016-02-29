@@ -2,7 +2,7 @@
 date = "2015-12-08T00:42:15+09:00"
 draft = true
 title = "SQLite で構築する MedDRA データベース"
-tags = ["meddra", "sql", "sqlite", "rdb", "shell", "medicine"]
+tags = ["meddra", "sql", "sqlite", "shell", "database", "medicine"]
 
 +++
 

@@ -2,7 +2,7 @@
 date = "2015-05-22T19:02:44+09:00"
 draft = true
 title = "ロジスティック回帰に基づく予測と可視化"
-tags = ["glm", "r", "predict", "ggplot2", "statistics"]
+tags = ["glm", "r", "ggplot2", "statistics"]
 
 +++
 
