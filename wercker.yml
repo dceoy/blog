@@ -1,12 +1,14 @@
-box: wercker/default
+box: debian
 build:
   steps:
     - arjen/hugo-build:
-        version: 0.15
+        version: "0.15"
         theme: nofancy
         flags: --buildDrafts=true
 deploy:
   steps:
+    - install-packages:
+        packages: git ssh-client
     - lukevivier/gh-pages:
         token: $GIT_TOKEN
         basedir: public

@@ -9,23 +9,18 @@ title = "About This Blog"
 
 ##### 著者
 
+医療系のデータ分析を専門とする研究者.
+
 [dceoy.github.io](http://dceoy.github.io/)
-
-医薬系のデータ解析が専門.  
-研究所に勤務しながら, 薬学系の大学院にも在籍. D 論つらい.
-
-[wishlist](https://www.amazon.co.jp/registry/wishlist/19AO83BWSSZYG/ref=cm_sw_r_fa_ws_yCBAwbYSCBQHX)
 
 ##### 関心のある領域
 
 > - 統計学
-> - データマイニング
-> - データベース
-> - 機械学習
-> - Web アプリケーション
-> - 薬物療法
-> - 医療情報
+> - 疫学
 > - 医学生物学
+> - 機械学習
+> - アプリケーション開発
+> - サーバーインフラ自動化
 
 ##### 技術
 
