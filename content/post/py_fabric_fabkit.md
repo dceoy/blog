@@ -2,7 +2,7 @@
 date = "2015-05-05T02:48:32+09:00"
 draft = true
 title = "Fabric による開発環境の管理"
-tags = ["fabric", "python", "vim", "zsh", "linux", "fedora", "centos", "macosx"]
+tags = ["python", "fabric", "automation", "vim", "zsh", "linux", "fedora", "centos", "ubuntu", "macosx"]
 
 +++
 
@@ -70,8 +70,13 @@ Fabric は学習コストが小さい割に強力な自動化ツールとなる.
 
 2015-08-23 追記:
 
-- [リポジトリを dotfiles => fabkit へ変更](https://github.com/dceoy/fabkit)
-- `rhel_env`, `osx_env` は `init_dev` へ統合
+- [リポジトリを dotfiles => fabkit へ変更](https://github.com/dceoy/fabkit).
+- `rhel_env`, `osx_env` は `init_dev` へ統合.
+
+2016-07-03 追記:
+
+- `init_dev` を `dev` へ変更.
+- テストを兼ね, [Wercker](http://wercker.com/) を使った [Docker image](https://hub.docker.com/r/dceoy/dev/) の自動ビルドを設定.
 
 
 <script>

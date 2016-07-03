@@ -2,7 +2,7 @@
 date = "2015-05-07T00:15:37+09:00"
 draft = true
 title = "CSV を任意のセパレーターに変換して出力するコマンドを作った"
-tags = ["cli.go", "go"]
+tags = ["go", "cli.go"]
 
 +++
 

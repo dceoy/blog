@@ -2,7 +2,7 @@
 date = "2015-05-11T23:56:03+09:00"
 draft = true
 title = "ggplot2 で描く forest plot"
-tags = ["ggplot2", "r", "visualization", "statistics"]
+tags = ["r", "ggplot2", "visualization", "statistics"]
 
 +++
 
@@ -30,7 +30,7 @@ meta-analysis では, 各研究の重みや菱型で表す統合オッズ比な�
 <script src="https://gist.github.com/dceoy/a3c63540a8722afbc4dd.js?file=odds_ratio.csv"></script>
 
 ggplot2 は forest plot を想定した関数は備えていないようだったので, 点と区間を表現する `geom_pointrange` を使った.  
-オッズ比のサンプルは[以前書いた Fisher exact test の記事と同じ方法](/post/row_fisher_test/)で作った.
+オッズ比のサンプルは[以前書いた Fisher exact test の記事と同じ方法](/post/r_row_fisher_test/)で作った.
 
 下図は出力された SVG.
 

@@ -2,7 +2,7 @@
 date = "2015-04-30T00:53:48+09:00"
 draft = true
 title = "Hugo でブログを作った"
-tags = ["hugo", "go", "wercker", "ci", "github"]
+tags = ["hugo", "github", "markdown", "go", "wercker", "ci"]
 
 +++
 

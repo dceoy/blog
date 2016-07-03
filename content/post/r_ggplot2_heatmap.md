@@ -2,7 +2,7 @@
 date = "2015-05-14T23:52:26+09:00"
 draft = true
 title = "ggplot2 で描く heatmap"
-tags = ["ggplot2", "r", "visualization"]
+tags = ["r", "ggplot2", "visualization"]
 
 +++
 

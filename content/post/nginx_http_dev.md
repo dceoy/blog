@@ -66,6 +66,12 @@ Web サーバーといえば [Apache](https://httpd.apache.org/) のシェアが
 
 このくらいの用途なら細かく設定する必要もないので, データ分析などにも使い易いと思う.
 
+---
+
+2016-07-03 追記:
+
+- [Docker image](https://github.com/dceoy/docker-nginx-autoindex) を作った.
+
 
 <script>
   amzn_assoc_default_search_key = "nginx";

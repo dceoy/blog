@@ -2,11 +2,11 @@
 date = "2015-05-22T19:02:44+09:00"
 draft = true
 title = "ロジスティック回帰に基づく予測と可視化"
-tags = ["glm", "r", "ggplot2", "statistics"]
+tags = ["r", "glm", "ggplot2", "statistics"]
 
 +++
 
-[UCLA のページ](https://idre.ucla.edu/)の[ロジスティック回帰の例](http://www.ats.ucla.edu/stat/r/dae/logit.htm)に [predict](http://www.inside-r.org/r-doc/stats/predict) で出力した予測確率のグラフがあったので, これを参考に[前回の記事](/post/glm_confint/)のモデルで可視化してみた.
+[UCLA のページ](https://idre.ucla.edu/)の[ロジスティック回帰の例](http://www.ats.ucla.edu/stat/r/dae/logit.htm)に [predict](http://www.inside-r.org/r-doc/stats/predict) で出力した予測確率のグラフがあったので, これを参考に[前回の記事](/post/r_glm_confint/)のモデルで可視化してみた.
 
 今回のモデルは 2 つの説明変数を持つため, `glucose` の値を四分位点毎に固定し, `diabetes` を横軸, 予測確率を縦軸に取って作図した.  
 信頼区間は標準誤差から計算している.

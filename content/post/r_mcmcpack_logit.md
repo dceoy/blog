@@ -2,7 +2,7 @@
 date = "2015-06-03T19:19:34+09:00"
 draft = true
 title = "MCMC によるロジステック回帰"
-tags = ["mcmcpack", "r", "mcmc", "statistics"]
+tags = ["r", "mcmcpack", "mcmc", "statistics"]
 
 +++
 

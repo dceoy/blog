@@ -2,7 +2,7 @@
 date = "2015-12-13T03:49:46+09:00"
 draft = true
 title = "カフェインの薬理"
-tags = ["coffee", "caffeine", "pharmacology", "medicine", "advent_calendar"]
+tags = ["pharmacology", "science", "medicine", "coffee", "caffeine", "advent_calendar"]
 
 +++
 
