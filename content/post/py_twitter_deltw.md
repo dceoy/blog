@@ -69,7 +69,22 @@ Twitter の REST APIs は流石によくできていて利用しやすい.
 
 2016-02-29 追記:
 
-- [コードを Python に集約](https://github.com/dceoy/del-tw). ZIP を引数に JSON を生成せず実行する.
+- [コードを Python に集約](https://github.com/dceoy/deltw/tree/7432913fc4b919db410437548071bbff572cf65c). ZIP を引数に JSON を生成せず実行する.
+
+2016-11-23 追記:
+
+- パッケージ化して GitHub からインストールできるようにした.
+
+  ```sh
+  # install deltw
+  $ pip install -U git+https://github.com/dceoy/deltw
+
+  # print usage
+  $ deltw --help
+
+  # delete tweets in a zip of witter archive
+  $ deltw --credentials tw_credentials.yml --archive /path/to/tweet_archive.zip
+  ```
 
 
 <script>
