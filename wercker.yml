@@ -8,10 +8,13 @@ build:
 deploy:
   steps:
     - script:
-        name: install git ssh-client
         code: |
           apt-get -y update
-          apt-get -y install git ssh-client
+          apt-get -y install git ssh-client curl
     - lukevivier/gh-pages:
         token: $GIT_TOKEN
         basedir: public
+  after-steps:
+    - slack-notifier:
+        url: $SLACK_URL
+        channel: $SLACK_CHANNEL
