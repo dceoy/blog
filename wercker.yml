@@ -1,4 +1,6 @@
-box: ubuntu
+box:
+  id: dceoy/wercker-base
+  entrypoint: /bin/bash -c
 build:
   steps:
     - arjen/hugo-build:
@@ -10,7 +12,7 @@ deploy:
     - script:
         code: |
           apt-get -y update
-          apt-get -y install git ssh-client curl
+          apt-get -y install git ssh-client
     - lukevivier/gh-pages:
         token: $GIT_TOKEN
         basedir: public
