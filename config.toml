@@ -1,21 +1,23 @@
-contentdir = "content"
-layoutdir = "layouts"
-publishdir = "public"
-baseurl = "https://dceoy.github.io/blog/"
-title = "Lorem Ipsum"
+contentdir = 'content'
+layoutdir = 'layouts'
+publishdir = 'public'
+baseurl = 'https://dceoy.github.io/blog/'
+title = 'Lorem Ipsum'
 canonifyurls = true
-copyright = "Copyright (c) 2015 dceoy; all rights reserved."
+copyright = 'Copyright (c) 2015 dceoy; all rights reserved.'
 
 [indexes]
-  category = "categories"
-  tag = "tags"
+  category = 'categories'
+  tag = 'tags'
 
 [params]
-  description = "Interdisciplinary Science"
-  highlight = "atelier-lakeside.light"
+  description = 'Interdisciplinary Science'
+  highlight = 'atelier-lakeside.light'
 
 [author]
-  name = "dceoy"
-  github = "dceoy"
-  twitter = "dceoy"
-  gaID = "UA-27914660-5"
+  name = 'dceoy'
+  github = 'dceoy'
+  twitter = 'dceoy'
+  facebook = 'daichi.narushima'
+  linkedin = '65676641'
+  gaID = 'UA-27914660-5'
