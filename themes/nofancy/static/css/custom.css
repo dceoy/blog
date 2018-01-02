@@ -72,7 +72,7 @@ body {
 	font-family: verdana,arial,helvetica,sans-serif;
 	color:#888;
 	font-size:x-small;
-	margin-bottom:0;
+	margin-bottom: 1em;
 }
 
 .footnote a {
@@ -196,10 +196,6 @@ body {
 	line-height: 40px;
 	margin-top: 0;
 	margin-bottom: 0;
-}
-
-img {
-  max-width:100%;
 }
 
 @media screen and (max-width:767px){

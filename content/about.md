@@ -1,17 +1,16 @@
-+++
-date = "2015-04-30T00:25:13+09:00"
-title = "About This Blog"
-+++
+---
+date: 2018-01-02T17:38:20+09:00
+title: "About the author"
 
-技術等に関する雑記.
+---
 
 ##### 著者
 
 > ソフトウェアエンジニア. 博士 (薬科学).
 
-> 自動化が好き.
+> 自動化好き.
 
-> Web ページ:
+##### Web ページ
 
 > - [dceoy.github.io](http://dceoy.github.io/)
 > - [about.me/d.n](https://about.me/d.n)
