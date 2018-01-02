@@ -1,8 +1,9 @@
-+++
-date = "2015-05-22T19:02:44+09:00"
-title = "ロジスティック回帰に基づく予測と可視化"
-tags = ["r", "glm", "ggplot2", "statistics"]
-+++
+---
+date: 2015-05-22T19:02:44+09:00
+title: "ロジスティック回帰に基づく予測と可視化"
+tags: ["r", "glm", "ggplot2", "statistics"]
+
+---
 
 [UCLA のページ](https://idre.ucla.edu/)の[ロジスティック回帰の例](http://www.ats.ucla.edu/stat/r/dae/logit.htm)に [predict](http://www.inside-r.org/r-doc/stats/predict) で出力した予測確率のグラフがあったので, これを参考に[前回の記事](/post/r_glm_confint/)のモデルで可視化してみた.
 

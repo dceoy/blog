@@ -1,8 +1,9 @@
-+++
-date = "2015-05-05T02:48:32+09:00"
-title = "Fabric による開発環境の管理"
-tags = ["python", "fabric", "automation", "vim", "zsh", "linux", "fedora", "centos", "ubuntu", "macosx"]
-+++
+---
+date: 2015-05-05T02:48:32+09:00
+title: "Fabric による開発環境の管理"
+tags: ["python", "fabric", "automation", "vim", "zsh", "linux", "fedora", "centos", "ubuntu", "macosx"]
+
+---
 
 <div style="text-align: center;">
   <img src="../../images/fabric.png" alt="logo">

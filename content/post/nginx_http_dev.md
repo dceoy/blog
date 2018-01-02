@@ -1,8 +1,9 @@
-+++
-date = "2015-12-12T22:48:57+09:00"
-title = "HTTP サーバーでユーザーのディレクトリを公開する"
-tags = ["nginx", "http", "fedora", "linux", "python", "web"]
-+++
+---
+date: 2015-12-12T22:48:57+09:00
+title: "HTTP サーバーでユーザーのディレクトリを公開する"
+tags: ["nginx", "http", "fedora", "linux", "python", "web"]
+
+---
 
 <div style="text-align: center;">
   <img src="../../images/nginx.png" alt="logo">

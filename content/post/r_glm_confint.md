@@ -1,8 +1,9 @@
-+++
-date = "2015-05-21T05:12:28+09:00"
-title = "R でのロジスティック回帰と係数の信頼区間"
-tags = ["r", "glm", "statistics"]
-+++
+---
+date: 2015-05-21T05:12:28+09:00
+title: "R でのロジスティック回帰と係数の信頼区間"
+tags: ["r", "glm", "statistics"]
+
+---
 
 \[
   \ln(\frac{ p }{ 1 - p })  = \alpha + \beta_1 x_1 + \beta_2 x_2

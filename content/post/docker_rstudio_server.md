@@ -1,8 +1,9 @@
-+++
-date = "2015-12-09T23:28:45+09:00"
-title = "RStudio Server on Docker"
-tags = ["docker", "r", "rstudio_server", "ubuntu", "fabric", "digitalocean"]
-+++
+---
+date: 2015-12-09T23:28:45+09:00
+title: "RStudio Server on Docker"
+tags: ["docker", "r", "rstudio_server", "ubuntu", "fabric", "digitalocean"]
+
+---
 
 <div style="text-align: center;">
   <img src="../../images/rstudio.png" alt="logo">
