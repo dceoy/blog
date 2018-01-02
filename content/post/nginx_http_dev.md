@@ -1,9 +1,7 @@
 +++
 date = "2015-12-12T22:48:57+09:00"
-draft = true
 title = "HTTP サーバーでユーザーのディレクトリを公開する"
 tags = ["nginx", "http", "fedora", "linux", "python", "web"]
-
 +++
 
 <div style="text-align: center;">

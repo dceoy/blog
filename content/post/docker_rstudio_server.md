@@ -1,9 +1,7 @@
 +++
 date = "2015-12-09T23:28:45+09:00"
-draft = true
 title = "RStudio Server on Docker"
 tags = ["docker", "r", "rstudio_server", "ubuntu", "fabric", "digitalocean"]
-
 +++
 
 <div style="text-align: center;">

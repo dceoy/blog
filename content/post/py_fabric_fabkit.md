@@ -1,9 +1,7 @@
 +++
 date = "2015-05-05T02:48:32+09:00"
-draft = true
 title = "Fabric による開発環境の管理"
 tags = ["python", "fabric", "automation", "vim", "zsh", "linux", "fedora", "centos", "ubuntu", "macosx"]
-
 +++
 
 <div style="text-align: center;">

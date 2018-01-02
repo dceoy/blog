@@ -1,9 +1,7 @@
 +++
 date = "2015-05-08T00:28:33+09:00"
-draft = true
 title = "行列の各行で Fisher の正確な検定"
 tags = ["r", "statistics"]
-
 +++
 
 <style>#ct td { text-align: center; }</style>
