@@ -11,13 +11,13 @@ copyright = 'Copyright (c) 2015 dceoy; all rights reserved.'
   tag = 'tags'
 
 [params]
-  description = 'Interdisciplinary Science'
-  highlight = 'atelier-lakeside.light'
+  highlight = 'github'
+  topmenu = 'categories'
 
 [author]
   name = 'dceoy'
   github = 'dceoy'
   twitter = 'dceoy'
   facebook = 'daichi.narushima'
-  linkedin = '65676641'
-  gaID = 'UA-27914660-5'
+  linkedin = 'daichi-narushima-65676641'
+  gaid = 'UA-27914660-5'
