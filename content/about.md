@@ -6,9 +6,12 @@ title: "About the author"
 
 ##### 著者
 
-> ソフトウェアエンジニア. 博士 (薬科学).
+> ソフトウェアエンジニア兼データ分析者. 博士 (薬科学).
 
 > 自動化好き.
+> 基本的に開発・分析のコーディングは Zsh と Vim で行う.
+> よく書く言語は Python, R, Shell.
+> インフラ面では Docker や Ansible を積極的に使う.
 
 ##### Web ページ
 
@@ -21,8 +24,9 @@ title: "About the author"
 > - 機械学習
 > - 疫学
 > - 医学生物学
-> - Linux
 > - アプリケーション開発
+> - サーバー構築
+> - データベース
 > - コンテナ技術
 > - Infrastructure as Code / DevOps
 > - Web サービス
