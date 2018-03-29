@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  hugo:
+    container_name: hugo
+    image: dceoy/hugo:latest
+    user: ${UID}:${GID}
+    ports:
+      - 1313:1313
+    volumes:
+      - .:/blog
+    working_dir: /blog
+    entrypoint:
+      - /go/bin/hugo
+    command:
+      - server
+      - --bind=0.0.0.0
+      - --theme=nofancy
+      - --buildDrafts
+      - --watch
