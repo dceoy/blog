@@ -8,7 +8,7 @@ services:
     ports:
       - 1313:1313
     volumes:
-      - .:/blog
+      - ${PWD}:/blog
     working_dir: /blog
     entrypoint:
       - /go/bin/hugo
