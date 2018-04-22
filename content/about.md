@@ -1,35 +1,35 @@
 ---
-date: 2018-01-02T17:38:20+09:00
-title: "About the author"
-
+title: "About the blog"
+date: 2018-04-22T16:01:52Z
 ---
 
-##### 著者
+技術系の雑記.
 
-> ソフトウェアエンジニア兼データ分析者. 博士 (薬科学).
+About the author
+----------------
 
-> 自動化好き.
-> 基本的に開発・分析のコーディングは Zsh と Vim で行う.
-> よく書く言語は Python, R, Shell.
-> インフラ面では Docker や Ansible を積極的に使う.
+ソフトウェアエンジニア. データ分析者. 博士 (薬科学).
 
-##### Web ページ
+自動化好き.
+開発・分析のコーディング環境は主に Zsh と Vim, 言語は Python や R, Shell.
+インフラ面では Docker や Ansible をよく使っている.
 
-> - [dceoy.github.io](http://dceoy.github.io/)
-> - [about.me/d.n](https://about.me/d.n)
+Web ページ:
 
-##### 関心のある領域
+- [dceoy.github.io](http://dceoy.github.io/)
+- [about.me/d.n](https://about.me/d.n)
 
-> - 統計学
-> - 機械学習
-> - 疫学
-> - 医学生物学
-> - アプリケーション開発
-> - サーバー構築
-> - データベース
-> - コンテナ技術
-> - Infrastructure as Code / DevOps
-> - Web サービス
+関心のある領域:
+
+- 統計学
+- 機械学習
+- 疫学
+- 医学生物学
+- データ分析
+- アプリケーション開発
+- コンテナ技術
+- Infrastructure as Code / DevOps
+- Web サービス
 
 <script>
   amzn_assoc_default_search_key = "data analysis";
