@@ -2,7 +2,6 @@
 date: 2015-05-19T22:16:50+09:00
 title: "Twitter API から取得できない古いツイートを削除する"
 tags: ["python", "twitter", "api"]
-
 ---
 
 <div style="text-align: center;">

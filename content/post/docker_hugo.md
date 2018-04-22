@@ -1,7 +1,7 @@
 ---
 title: "Hugo on Docker"
 date: 2018-04-22T10:58:37Z
-draft: true
+tags: ["docker", "docker-compose", "hugo", "github"]
 ---
 
 <div style="text-align: center;">

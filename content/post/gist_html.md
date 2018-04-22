@@ -2,7 +2,6 @@
 date: 2015-05-09T13:57:52+09:00
 title: "Gist に置いた HTML を Web ページとして表示する"
 tags: ["github", "gist", "html", "css", "javascript", "web"]
-
 ---
 
 <div style="text-align: center;">

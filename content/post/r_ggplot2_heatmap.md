@@ -2,7 +2,6 @@
 date: 2015-05-14T23:52:26+09:00
 title: "ggplot2 で描く heatmap"
 tags: ["r", "ggplot2", "visualization"]
-
 ---
 
 heatmap は比較的メジャーな可視化方法なので, 使える R のパッケージも多い.  

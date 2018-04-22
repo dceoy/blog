@@ -2,7 +2,6 @@
 date: 2015-05-11T23:56:03+09:00
 title: "ggplot2 で描く forest plot"
 tags: ["r", "ggplot2", "visualization", "statistics"]
-
 ---
 
 forest plot は, オッズ比や相対リスクの点推定値と信頼区間を順に並べる描画方法で, [meta-analysis](http://www.med.osaka-u.ac.jp/pub/kid/clinicaljournalclub8.html) の可視化にしばしば用いられる.

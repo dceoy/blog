@@ -2,7 +2,6 @@
 date: 2015-12-13T03:49:46+09:00
 title: "カフェインの薬理"
 tags: ["pharmacology", "science", "medicine", "coffee", "caffeine", "advent_calendar"]
-
 ---
 
 <div style="text-align: center;">

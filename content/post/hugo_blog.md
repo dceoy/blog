@@ -2,7 +2,6 @@
 date: 2015-04-30T00:53:48+09:00
 title: "Hugo でブログを作った"
 tags: ["hugo", "github", "markdown", "go", "wercker", "ci"]
-
 ---
 
 <div style="text-align: center;">
