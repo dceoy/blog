@@ -11,11 +11,11 @@ Usage
 Run a web server
 
 ```sh
-$ docker-compose run --rm hugo new post/new_post.md
+$ docker-compose up
 ```
 
 Create a new post
 
 ```sh
-$ docker-compose up
+$ docker-compose run --rm hugo new post/new_post.md
 ```

@@ -19,14 +19,16 @@ Blog powered by Hugo
 
 しかし, それで毎回ググっていたのでは手間なので, 面倒な作業は [Docker Compose](https://docs.docker.com/compose/) で行うようにした.
 
+Docker を使うので編集環境に Hugo をインストールする必要もなくなる.
+
 Docker image for Hugo
 ---------------------
 
 まずは Hugo の Docker image を作った.
 
-- Docker image (Docker Hub): [dceoy/hugo](https://hub.docker.com/r/dceoy/hugo/)
+- Docker image: [dceoy/hugo](https://hub.docker.com/r/dceoy/hugo/) @ Docker Hub
 
-- Dockerfile (GitHub): [dceoy/docker-hugo](https://github.com/dceoy/docker-hugo)
+- Dockerfile: [dceoy/docker-hugo](https://github.com/dceoy/docker-hugo) @ GitHub
 
 Hugo with Docker Compose
 ------------------------
@@ -49,6 +51,12 @@ Hugo with Docker Compose
 
 ```sh
 $ docker-compose up
+```
+
+新しく記事を作成する場合は以下のようにコマンドを指定して起動する.
+
+```sh
+$ docker-compose run --rm hugo new post/new_post.md
 ```
 
 これでブログを書くのが少し楽になった.
