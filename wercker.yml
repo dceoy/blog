@@ -1,5 +1,5 @@
 box:
-  id: dceoy/wercker-base
+  id: dceoy/wercker-base:github
   entrypoint: /bin/bash -c
 build:
   steps:
@@ -8,10 +8,6 @@ build:
       theme: nofancy
 deploy:
   steps:
-    - script:
-      code: |
-        apt-get -y update
-        apt-get -y install git ssh-client
     - lukevivier/gh-pages:
       token: $GIT_TOKEN
       basedir: public
