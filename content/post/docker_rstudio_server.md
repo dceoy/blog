@@ -9,7 +9,7 @@ tags: ["docker", "r", "rstudio_server", "ubuntu", "fabric", "digitalocean"]
 </div>
 <br>
 
-##### [dceoy/rstudio-server-docker](https://github.com/dceoy/rstudio-server-docker)
+##### [dceoy/docker-rstudio-server](https://github.com/dceoy/rstudio-server-docker)
 
 [RStudio Server](https://www.rstudio.com/products/rstudio/) の Dockerfile を作った.  
 Ubuntu のベースイメージからで latest の RStudio Server をインストールして起動する.

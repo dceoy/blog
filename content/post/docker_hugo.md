@@ -9,6 +9,8 @@ tags: ["docker", "docker-compose", "hugo", "github"]
 </div>
 <br>
 
+##### [dceoy/docker-hugo](https://github.com/dceoy/docker-hugo)
+
 2 年半近くブログ記事を書いていなかったが, その間に作ったものも GitHub に溜まってきたので, それをネタに少し記事を書いていくことにした.
 今回は [Docker](https://www.docker.com/) を使った Hugo ベースのブログ運用について.
 
