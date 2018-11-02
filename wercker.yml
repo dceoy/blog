@@ -1,17 +1,24 @@
+---
 box:
-  id: dceoy/wercker-base:github
+  id: dceoy/hugo:latest
   entrypoint: /bin/bash -c
 build:
   steps:
-    - arjen/hugo-build:
-      version: 0.26
-      theme: nofancy
+    - script:
+        name: Build HTML
+        code: |
+          hugo --theme=nofancy
 deploy:
   steps:
     - lukevivier/gh-pages:
-      token: $GIT_TOKEN
-      basedir: public
+        token: $GIT_TOKEN
+        basedir: public
   after-steps:
+    - script:
+        name: Install curl
+        code: |
+          apt-get -y update
+          apt-get -y install curl
     - slack-notifier:
-      url: $SLACK_URL
-      channel: $SLACK_CHANNEL
+        url: $SLACK_URL
+        channel: $SLACK_CHANNEL
