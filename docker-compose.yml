@@ -12,7 +12,7 @@ services:
       - ${PWD}:/blog
     working_dir: /blog
     entrypoint:
-      - /opt/go/bin/hugo
+      - hugo
     command:
       - server
       - --bind=0.0.0.0
