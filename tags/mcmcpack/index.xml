@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mcmcpack on Lorem Ipsum</title>
+    <link>https://dceoy.github.io/blog/tags/mcmcpack/</link>
+    <description>Recent content in mcmcpack on Lorem Ipsum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 03 Jun 2015 19:19:34 +0900</lastBuildDate>
+    
+	<atom:link href="https://dceoy.github.io/blog/tags/mcmcpack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MCMC によるロジステック回帰</title>
+      <link>https://dceoy.github.io/blog/post/r_mcmcpack_logit/</link>
+      <pubDate>Wed, 03 Jun 2015 19:19:34 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_mcmcpack_logit/</guid>
+      <description>マルコフ連鎖モンテカルロ法 (Markov chain Monte Carlo; MCMC) によるベイズ推定を行うソフトウェアとしては, ギブスサンプラー (Gibbs sampler) の BUGS (WinBUGS, OpenBUGS) や JAGS が有名であり, また近年では, ハミルトニアンモンテカルロ法 (Hamiltonian Monte Carlo; HMC) に基づく Stan も勢いがある.
+BUGS は枯れていて実績があり, Stan は従来の MCMC サンプラーと比較して高速・高効率なサンプリングが可能であるなど, それぞれメリットはあるが, いずれもその言語でモデルを記述する必要があるため, 初学者には多少敷居が高い.
+一方, R 上で MCMC を実行する [MCMCpack] (http://mcmcpack.berkeley.edu/) は, インターフェースが R のビルドイン関数に合わせて設計されているため, 少ない事前知識で MCMC を試せる.
+MCMCpack 以下は, MASS パッケージに含まれる乳癌の生検データから, MCMCpack でロジスティック回帰のパラメーターを推定した例.
+MCMClogit() では, glm() と同じような記述でメトロポリス法 (Metropolis algorithm) によるサンプリングを実行できる.
+実装が C++ のため処理も速い.
+まとめ R に慣れていれば MCMCpack は簡単に試せる.</description>
+    </item>
+    
+  </channel>
+</rss>

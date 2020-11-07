@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nginx on Lorem Ipsum</title>
+    <link>https://dceoy.github.io/blog/tags/nginx/</link>
+    <description>Recent content in nginx on Lorem Ipsum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 12 Dec 2015 22:48:57 +0900</lastBuildDate>
+    
+	<atom:link href="https://dceoy.github.io/blog/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTTP サーバーでユーザーのディレクトリを公開する</title>
+      <link>https://dceoy.github.io/blog/post/nginx_http_dev/</link>
+      <pubDate>Sat, 12 Dec 2015 22:48:57 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/nginx_http_dev/</guid>
+      <description>VirtualBox や VMware を使ってローカルのマシンに Linux の環境を作り, データ分析やソフトウェア開発をする際, ホストのブラウザからコンテンツを見たくなることがある.
+Python 組み込みの HTTP サーバーを使えば, これは簡単に実現する.
+Python HTTP Server Python 2
+$ python -m SimpleHTTPServer Python 3
+$ python -m http.server これは Web 系でなくても使えるテクニックで, 例えば, データ分析で出てきた結果の画像ファイルを見たりするのに使える.
+しかし, 毎回コマンドを実行するのは面倒だし, Python のサーバーは遅い.
+それが気になる場合は, デーモンで HTTP サーバーを実行し, ホーム下のディレクトリを公開すればいい.
+自分はこの用途で Nginx を使っている.
+Nginx 軽量で高速, 高機能な HTTP サーバー.
+Web サーバーといえば Apache のシェアが大きいが, 近年は Nginx もよく使われる.
+以下は Nginx を開発環境で使うまでの手順の例.
+ Nginx をインストール SELinux を設定する, もしくは切る Firewall で HTTP を許可する, もしくは切る 公開ディレクトリのパーミッションを設定 Nginx のドキュメントルートに公開ディレクトリのシンボリックリンクを貼る ディレクトリ一覧を見えるようにする (nginx.</description>
+    </item>
+    
+  </channel>
+</rss>

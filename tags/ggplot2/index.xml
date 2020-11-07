@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ggplot2 on Lorem Ipsum</title>
+    <link>https://dceoy.github.io/blog/tags/ggplot2/</link>
+    <description>Recent content in ggplot2 on Lorem Ipsum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 22 May 2015 19:02:44 +0900</lastBuildDate>
+    
+	<atom:link href="https://dceoy.github.io/blog/tags/ggplot2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ロジスティック回帰に基づく予測と可視化</title>
+      <link>https://dceoy.github.io/blog/post/r_glm_predict/</link>
+      <pubDate>Fri, 22 May 2015 19:02:44 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_glm_predict/</guid>
+      <description>UCLA のページのロジスティック回帰の例に predict で出力した予測確率のグラフがあったので, これを参考に前回の記事のモデルで可視化してみた.
+今回のモデルは 2 つの説明変数を持つため, glucose の値を四分位点毎に固定し, diabetes を横軸, 予測確率を縦軸に取って作図した.
+信頼区間は標準誤差から計算している.
+下図は出力された SVG.
+glm オブジェクトに適用する predict() の実体は predict.glm となる.
+モデルによって扱い方が異なる関数なので, 調べるときは注意が必要.
+今回は信頼区間の計算も自前でしているが, lm オブジェクトを引数に取る predict.lm などには信頼区間や予測区間を出すオプションがある. (predict.glm にはないらしい.)</description>
+    </item>
+    
+    <item>
+      <title>ggplot2 で描く heatmap</title>
+      <link>https://dceoy.github.io/blog/post/r_ggplot2_heatmap/</link>
+      <pubDate>Thu, 14 May 2015 23:52:26 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_ggplot2_heatmap/</guid>
+      <description>heatmap は比較的メジャーな可視化方法なので, 使える R のパッケージも多い.
+ggplot2 でも矩形を敷き詰める geom_tile で heatmap のような表現が可能になる.
+heatmap using ggplot2 以下は描画コードと値のサンプル.
+heatmap は図に対応した値の行列から作図するケースが少なくないと思うが, ggplot2 では上のように, 行列の位置と値をレコードとして持つテーブルから作図する.
+前者はスプレッドシートからの移植性などには優れるものの, 図の列が増えたときにデータが横に広がって処理が煩雑になるが, 後者はその心配がない.
+サンプルのデータはシェルからワンライナーで作った.
+$ echo &amp;#39;row,col,val&amp;#39; &amp;gt; matrix.csv $ seq -w 0 55 | grep -v &amp;#39;[6-9]&amp;#39; | sed -e &amp;#39;s/\(.\)\(.\)/\1 \2/g&amp;#39; | awk &amp;#39;{ print &amp;#34;row&amp;#34;$1&amp;#34;,col&amp;#34;$2&amp;#34;,&amp;#34;exp(rand() * 10) }&amp;#39; &amp;gt;&amp;gt; matrix.csv 下図は出力された SVG.
+まとめ データを位置と値のテーブルとして入力する点が良かった.
+この形式は SQL で抽出したデータを可視化するときなどに有利になる.</description>
+    </item>
+    
+    <item>
+      <title>ggplot2 で描く forest plot</title>
+      <link>https://dceoy.github.io/blog/post/r_ggplot2_forest/</link>
+      <pubDate>Mon, 11 May 2015 23:56:03 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_ggplot2_forest/</guid>
+      <description>forest plot は, オッズ比や相対リスクの点推定値と信頼区間を順に並べる描画方法で, meta-analysis の可視化にしばしば用いられる.
+これを R で簡潔に描くライブラリを探したが, 扱いやすいものがなかったので ggplot2 でコードを書いた.
+ggplot2 合理的に美麗なグラフを描ける R のパッケージ.
+人気があるライブラリで使ってる R ユーザーも多いと思う.
+多様なグラフを統一的なインターフェースで作成できる.
+forest plot using ggplot2 複数のオッズ比の点推定値と信頼区間の図示に主眼を置いた.
+meta-analysis では, 各研究の重みや菱型で表す統合オッズ比などを含めるケースもあるが, 自分の用途では必要なかったのでそれらは対応していない.
+以下は描画コードと読み込むオッズ比のサンプル.
+ggplot2 は forest plot を想定した関数は備えていないようだったので, 点と区間を表現する geom_pointrange を使った.
+オッズ比のサンプルは以前書いた Fisher exact test の記事と同じ方法で作った.
+下図は出力された SVG.
+まとめ 比較的簡単に書けた.
+ただ, 重みや統合オッズ比まで必要な場合は meta-analysis のパッケージを利用した方が無難かもしれない.
+このコードを最初に書いた 2014 年春頃は forest plot 専用のパッケージを見かけなかったが, 最近はあるらしい.</description>
+    </item>
+    
+  </channel>
+</rss>

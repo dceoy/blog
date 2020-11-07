@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>web on Lorem Ipsum</title>
+    <link>https://dceoy.github.io/blog/tags/web/</link>
+    <description>Recent content in web on Lorem Ipsum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
+    <lastBuildDate>Sat, 12 Dec 2015 22:48:57 +0900</lastBuildDate>
+    
+	<atom:link href="https://dceoy.github.io/blog/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>HTTP サーバーでユーザーのディレクトリを公開する</title>
+      <link>https://dceoy.github.io/blog/post/nginx_http_dev/</link>
+      <pubDate>Sat, 12 Dec 2015 22:48:57 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/nginx_http_dev/</guid>
+      <description>VirtualBox や VMware を使ってローカルのマシンに Linux の環境を作り, データ分析やソフトウェア開発をする際, ホストのブラウザからコンテンツを見たくなることがある.
+Python 組み込みの HTTP サーバーを使えば, これは簡単に実現する.
+Python HTTP Server Python 2
+$ python -m SimpleHTTPServer Python 3
+$ python -m http.server これは Web 系でなくても使えるテクニックで, 例えば, データ分析で出てきた結果の画像ファイルを見たりするのに使える.
+しかし, 毎回コマンドを実行するのは面倒だし, Python のサーバーは遅い.
+それが気になる場合は, デーモンで HTTP サーバーを実行し, ホーム下のディレクトリを公開すればいい.
+自分はこの用途で Nginx を使っている.
+Nginx 軽量で高速, 高機能な HTTP サーバー.
+Web サーバーといえば Apache のシェアが大きいが, 近年は Nginx もよく使われる.
+以下は Nginx を開発環境で使うまでの手順の例.
+ Nginx をインストール SELinux を設定する, もしくは切る Firewall で HTTP を許可する, もしくは切る 公開ディレクトリのパーミッションを設定 Nginx のドキュメントルートに公開ディレクトリのシンボリックリンクを貼る ディレクトリ一覧を見えるようにする (nginx.</description>
+    </item>
+    
+    <item>
+      <title>Gist に置いた HTML を Web ページとして表示する</title>
+      <link>https://dceoy.github.io/blog/post/gist_html/</link>
+      <pubDate>Sat, 09 May 2015 13:57:52 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/gist_html/</guid>
+      <description>少し前まで JavaScript や CSS, SVG のちょっとしたコードを埋めた HTML のデモを GitHub Pages のリポジトリに置いていたが, ブログを走らせるようになったので場所を Gist に移した.
+Gist に置いた HTML は RawGit を利用すると Web ページとして表示できる.
+RawGit GitHub や Gist に置いた HTML や JavaScript の raw ファイルを, 適当な content type で供給するサービスで, CDN のように使うことが可能.
+ファイルへのリンクは rawgit.com のフォームから作成する.
+以前は rawgithub.com というドメインだった.
+今回 Gist に移したコード  Accordion Menu &amp;mdash; demo / gist   CSS と jQuery で作った, 画像を使わない Accordion Menu.
+  Word Clouds &amp;mdash; demo / gist   D3 と d3-cloud で動く Word Clouds のデモ.</description>
+    </item>
+    
+  </channel>
+</rss>

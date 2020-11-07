@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>visualization on Lorem Ipsum</title>
+    <link>https://dceoy.github.io/blog/tags/visualization/</link>
+    <description>Recent content in visualization on Lorem Ipsum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 14 May 2015 23:52:26 +0900</lastBuildDate>
+    
+	<atom:link href="https://dceoy.github.io/blog/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ggplot2 で描く heatmap</title>
+      <link>https://dceoy.github.io/blog/post/r_ggplot2_heatmap/</link>
+      <pubDate>Thu, 14 May 2015 23:52:26 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_ggplot2_heatmap/</guid>
+      <description>heatmap は比較的メジャーな可視化方法なので, 使える R のパッケージも多い.
+ggplot2 でも矩形を敷き詰める geom_tile で heatmap のような表現が可能になる.
+heatmap using ggplot2 以下は描画コードと値のサンプル.
+heatmap は図に対応した値の行列から作図するケースが少なくないと思うが, ggplot2 では上のように, 行列の位置と値をレコードとして持つテーブルから作図する.
+前者はスプレッドシートからの移植性などには優れるものの, 図の列が増えたときにデータが横に広がって処理が煩雑になるが, 後者はその心配がない.
+サンプルのデータはシェルからワンライナーで作った.
+$ echo &amp;#39;row,col,val&amp;#39; &amp;gt; matrix.csv $ seq -w 0 55 | grep -v &amp;#39;[6-9]&amp;#39; | sed -e &amp;#39;s/\(.\)\(.\)/\1 \2/g&amp;#39; | awk &amp;#39;{ print &amp;#34;row&amp;#34;$1&amp;#34;,col&amp;#34;$2&amp;#34;,&amp;#34;exp(rand() * 10) }&amp;#39; &amp;gt;&amp;gt; matrix.csv 下図は出力された SVG.
+まとめ データを位置と値のテーブルとして入力する点が良かった.
+この形式は SQL で抽出したデータを可視化するときなどに有利になる.</description>
+    </item>
+    
+    <item>
+      <title>ggplot2 で描く forest plot</title>
+      <link>https://dceoy.github.io/blog/post/r_ggplot2_forest/</link>
+      <pubDate>Mon, 11 May 2015 23:56:03 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_ggplot2_forest/</guid>
+      <description>forest plot は, オッズ比や相対リスクの点推定値と信頼区間を順に並べる描画方法で, meta-analysis の可視化にしばしば用いられる.
+これを R で簡潔に描くライブラリを探したが, 扱いやすいものがなかったので ggplot2 でコードを書いた.
+ggplot2 合理的に美麗なグラフを描ける R のパッケージ.
+人気があるライブラリで使ってる R ユーザーも多いと思う.
+多様なグラフを統一的なインターフェースで作成できる.
+forest plot using ggplot2 複数のオッズ比の点推定値と信頼区間の図示に主眼を置いた.
+meta-analysis では, 各研究の重みや菱型で表す統合オッズ比などを含めるケースもあるが, 自分の用途では必要なかったのでそれらは対応していない.
+以下は描画コードと読み込むオッズ比のサンプル.
+ggplot2 は forest plot を想定した関数は備えていないようだったので, 点と区間を表現する geom_pointrange を使った.
+オッズ比のサンプルは以前書いた Fisher exact test の記事と同じ方法で作った.
+下図は出力された SVG.
+まとめ 比較的簡単に書けた.
+ただ, 重みや統合オッズ比まで必要な場合は meta-analysis のパッケージを利用した方が無難かもしれない.
+このコードを最初に書いた 2014 年春頃は forest plot 専用のパッケージを見かけなかったが, 最近はあるらしい.</description>
+    </item>
+    
+  </channel>
+</rss>

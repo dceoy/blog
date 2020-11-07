@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>glm on Lorem Ipsum</title>
+    <link>https://dceoy.github.io/blog/tags/glm/</link>
+    <description>Recent content in glm on Lorem Ipsum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
+    <lastBuildDate>Fri, 22 May 2015 19:02:44 +0900</lastBuildDate>
+    
+	<atom:link href="https://dceoy.github.io/blog/tags/glm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ロジスティック回帰に基づく予測と可視化</title>
+      <link>https://dceoy.github.io/blog/post/r_glm_predict/</link>
+      <pubDate>Fri, 22 May 2015 19:02:44 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_glm_predict/</guid>
+      <description>UCLA のページのロジスティック回帰の例に predict で出力した予測確率のグラフがあったので, これを参考に前回の記事のモデルで可視化してみた.
+今回のモデルは 2 つの説明変数を持つため, glucose の値を四分位点毎に固定し, diabetes を横軸, 予測確率を縦軸に取って作図した.
+信頼区間は標準誤差から計算している.
+下図は出力された SVG.
+glm オブジェクトに適用する predict() の実体は predict.glm となる.
+モデルによって扱い方が異なる関数なので, 調べるときは注意が必要.
+今回は信頼区間の計算も自前でしているが, lm オブジェクトを引数に取る predict.lm などには信頼区間や予測区間を出すオプションがある. (predict.glm にはないらしい.)</description>
+    </item>
+    
+    <item>
+      <title>R でのロジスティック回帰と係数の信頼区間</title>
+      <link>https://dceoy.github.io/blog/post/r_glm_confint/</link>
+      <pubDate>Thu, 21 May 2015 05:12:28 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_glm_confint/</guid>
+      <description>[ \ln(\frac{ p }{ 1 - p }) = \alpha + \beta_1 x_1 + \beta_2 x_2 ]
+R でのロジスティック回帰には, 一般化線形モデル (Generalized Linear Model; GLM) を扱う glm をよく使うが, この返り値に confint を当てれば回帰係数の信頼区間 (Confidence Interval; CI) を算出できる.
+今回は, パッケージ faraway で得られるピマインディアンの糖尿病検査のデータ pima を例に, ロジスティック回帰を行い, 係数の信頼区間を計算した.
+オッズ比は回帰係数で exp() を取れば算出される.</description>
+    </item>
+    
+  </channel>
+</rss>

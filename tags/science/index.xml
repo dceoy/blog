@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>science on Lorem Ipsum</title>
+    <link>https://dceoy.github.io/blog/tags/science/</link>
+    <description>Recent content in science on Lorem Ipsum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 13 Dec 2015 03:49:46 +0900</lastBuildDate>
+    
+	<atom:link href="https://dceoy.github.io/blog/tags/science/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>カフェインの薬理</title>
+      <link>https://dceoy.github.io/blog/post/caffeine_pharmacology/</link>
+      <pubDate>Sun, 13 Dec 2015 03:49:46 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/caffeine_pharmacology/</guid>
+      <description>コーヒー Advent Calendar 2015 の 13 日目の記事です.
+私はよく, 生豆の店で焙煎してもらった豆を買い, 家で挽いてハンドドリップで抽出して飲んでいます.
+豆は毎回別の産地のものを買って, 違いを味わうのがちょっとした楽しみです.
+そのようにコーヒーは好きなのですが, 空腹時に何杯も飲むと調子が悪くなることがあります.
+今回の記事はその原因であろう成分, カフェインについて書きます.
+Caffeine カフェインは, コーヒー (0.8 ~ 2.3 %), 茶 (2 ~ 4 %), ココア (0.05 ~ 0.8 %), コーラ (2 ~ 4 %) など嗜好品として最も多く用いられる中枢興奮薬であり, また, 頭痛薬 (特に片頭痛, 高血圧性頭痛) や風邪薬に配合され, 医薬品としても用いられる.
+化学構造 カフェイン. キサンチン誘導体. アルカロイド. 水には微溶.
+キサンチンのメチル誘導体としては他にテオフィリン, テオブロミンがある.
+テオフィリンは茶, テオブロミンはココアなどに含まれる.
+作用機序  ホスホジエステラーゼの阻害による cAMP の増加 アデノシン受容体の非特異的拮抗作用 細胞内貯蔵 Ca2+の遊離促進作用  これらの内, アデノシン受容体拮抗作用は言及されることが多いと思う.
+アデノシン. アデニンとリボースからなるヌクレオシド.
+カフェインはアデニンと同じくプリン骨格を有しているので, 拮抗作用も想像に難くない.
+薬理作用  中枢神経系  大脳皮質及び延髄中枢の興奮を起こす.</description>
+    </item>
+    
+  </channel>
+</rss>

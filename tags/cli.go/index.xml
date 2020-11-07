@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cli.go on Lorem Ipsum</title>
+    <link>https://dceoy.github.io/blog/tags/cli.go/</link>
+    <description>Recent content in cli.go on Lorem Ipsum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
+    <lastBuildDate>Thu, 07 May 2015 00:15:37 +0900</lastBuildDate>
+    
+	<atom:link href="https://dceoy.github.io/blog/tags/cli.go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CSV を任意のセパレーターに変換して出力するコマンドを作った</title>
+      <link>https://dceoy.github.io/blog/post/go_cli_psv/</link>
+      <pubDate>Thu, 07 May 2015 00:15:37 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/go_cli_psv/</guid>
+      <description>dceoy/psv 一般的なデータ処理の課題では, わざわざコードを書かなくてもシェル上で済む, ということがよくある.
+ワンライナーで問題が一瞬に解決すると嬉しい.
+そんなスタンスで, CSV のデータをコマンドラインで処理する機会があった.
+単純に考えれば, Awk でセパレーターをカンマにセットすれば, 各フィールドの値を取れる.
+しかしそれでは, 以下のようにフィールド内にカンマがある場合に正しくパースできない.
+&amp;quot;fugit&amp;quot;,&amp;quot;quo, dolor&amp;quot;,&amp;quot;quos&amp;quot;  CSV は一見簡単に見えるが, これ以外にも考慮することが実は多く, 安易にパースしない方がいいらしい.
+そこで, 既存のパーサーを使って CSV を読むコマンドを作った.
+実装した機能は, 「フィールドセパレーターのカンマを任意の値に換えて出力する」のみ.
+一旦ユニークなセパレーターで出力すれば, 後は Awk に渡せるのでハッピー.
+cli.go 今回のものは軽いなので, 以前から興味のあった Go で書くことにした.
+一応コマンドとしての体裁が欲しいので cli.go というパッケージを使った.
+cli.go はコマンドラインツールのフレームワークのようなもので, 迅速な開発を助けてくれる.
+psv Go の環境がある場合, 以下でインストールする.
+$ go get github.com/dceoy/psv -s オプションでカンマに置き換えるセパレーターを渡して使う.
+結果は標準出力に出る.
+$ psv -s [separator] example.csv -s を設定しない場合はカンマがセパレーターとして渡る.
+入力は 1 つの CSV ファイルを想定しているが, 標準入力も受け取れる.
+内部では Go の encoding/csv で CSV を読んでいる.</description>
+    </item>
+    
+  </channel>
+</rss>

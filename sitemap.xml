@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/about/</loc>
+    <lastmod>2018-04-22T16:01:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/</loc>
+    <lastmod>2018-04-22T16:01:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/docker/</loc>
+    <lastmod>2018-04-22T10:58:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/docker-compose/</loc>
+    <lastmod>2018-04-22T10:58:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/github/</loc>
+    <lastmod>2018-04-22T10:58:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/hugo/</loc>
+    <lastmod>2018-04-22T10:58:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/docker_hugo/</loc>
+    <lastmod>2018-04-22T10:58:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/</loc>
+    <lastmod>2018-04-22T10:58:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/</loc>
+    <lastmod>2018-04-22T10:58:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/advent_calendar/</loc>
+    <lastmod>2015-12-13T03:49:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/caffeine/</loc>
+    <lastmod>2015-12-13T03:49:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/coffee/</loc>
+    <lastmod>2015-12-13T03:49:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/medicine/</loc>
+    <lastmod>2015-12-13T03:49:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/pharmacology/</loc>
+    <lastmod>2015-12-13T03:49:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/science/</loc>
+    <lastmod>2015-12-13T03:49:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/caffeine_pharmacology/</loc>
+    <lastmod>2015-12-13T03:49:46+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/fedora/</loc>
+    <lastmod>2015-12-12T22:48:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/http/</loc>
+    <lastmod>2015-12-12T22:48:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/nginx_http_dev/</loc>
+    <lastmod>2015-12-12T22:48:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/linux/</loc>
+    <lastmod>2015-12-12T22:48:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/nginx/</loc>
+    <lastmod>2015-12-12T22:48:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/python/</loc>
+    <lastmod>2015-12-12T22:48:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/web/</loc>
+    <lastmod>2015-12-12T22:48:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/digitalocean/</loc>
+    <lastmod>2015-12-09T23:28:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/fabric/</loc>
+    <lastmod>2015-12-09T23:28:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/r/</loc>
+    <lastmod>2015-12-09T23:28:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/docker_rstudio_server/</loc>
+    <lastmod>2015-12-09T23:28:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/rstudio_server/</loc>
+    <lastmod>2015-12-09T23:28:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/ubuntu/</loc>
+    <lastmod>2015-12-09T23:28:45+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/database/</loc>
+    <lastmod>2015-12-08T00:42:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/meddra/</loc>
+    <lastmod>2015-12-08T00:42:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/shell/</loc>
+    <lastmod>2015-12-08T00:42:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/sql/</loc>
+    <lastmod>2015-12-08T00:42:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/sqlite/</loc>
+    <lastmod>2015-12-08T00:42:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/meddra_sqlite/</loc>
+    <lastmod>2015-12-08T00:42:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/mcmc/</loc>
+    <lastmod>2015-06-03T19:19:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/r_mcmcpack_logit/</loc>
+    <lastmod>2015-06-03T19:19:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/mcmcpack/</loc>
+    <lastmod>2015-06-03T19:19:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/statistics/</loc>
+    <lastmod>2015-06-03T19:19:34+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/ggplot2/</loc>
+    <lastmod>2015-05-22T19:02:44+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/glm/</loc>
+    <lastmod>2015-05-22T19:02:44+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/r_glm_predict/</loc>
+    <lastmod>2015-05-22T19:02:44+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/r_glm_confint/</loc>
+    <lastmod>2015-05-21T05:12:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/api/</loc>
+    <lastmod>2015-05-19T22:16:50+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/twitter/</loc>
+    <lastmod>2015-05-19T22:16:50+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/py_twitter_deltw/</loc>
+    <lastmod>2015-05-19T22:16:50+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/r_ggplot2_heatmap/</loc>
+    <lastmod>2015-05-14T23:52:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/visualization/</loc>
+    <lastmod>2015-05-14T23:52:26+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/r_ggplot2_forest/</loc>
+    <lastmod>2015-05-11T23:56:03+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/css/</loc>
+    <lastmod>2015-05-09T13:57:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/gist/</loc>
+    <lastmod>2015-05-09T13:57:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/gist_html/</loc>
+    <lastmod>2015-05-09T13:57:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/html/</loc>
+    <lastmod>2015-05-09T13:57:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/javascript/</loc>
+    <lastmod>2015-05-09T13:57:52+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/r_row_fisher_test/</loc>
+    <lastmod>2015-05-08T00:28:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/cli.go/</loc>
+    <lastmod>2015-05-07T00:15:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/go_cli_psv/</loc>
+    <lastmod>2015-05-07T00:15:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/go/</loc>
+    <lastmod>2015-05-07T00:15:37+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/r_pkg/</loc>
+    <lastmod>2015-05-06T01:22:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/automation/</loc>
+    <lastmod>2015-05-05T02:48:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/centos/</loc>
+    <lastmod>2015-05-05T02:48:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/py_fabric_fabkit/</loc>
+    <lastmod>2015-05-05T02:48:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/macosx/</loc>
+    <lastmod>2015-05-05T02:48:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/vim/</loc>
+    <lastmod>2015-05-05T02:48:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/zsh/</loc>
+    <lastmod>2015-05-05T02:48:32+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/ci/</loc>
+    <lastmod>2015-04-30T00:53:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/post/hugo_blog/</loc>
+    <lastmod>2015-04-30T00:53:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/markdown/</loc>
+    <lastmod>2015-04-30T00:53:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/tags/wercker/</loc>
+    <lastmod>2015-04-30T00:53:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://dceoy.github.io/blog/categories/</loc>
+  </url>
+  
+</urlset>

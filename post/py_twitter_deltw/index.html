@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+  <meta charset="utf-8">
+  <title>Twitter API から取得できない古いツイートを削除する - Lorem Ipsum</title>
+  <meta name="description" content="Twitter API から取得できない古いツイートを削除する">
+  <meta name="author" content="dceoy">
+  <link rel="shortcut icon" type="image/x-icon" href="https://dceoy.github.io/blog/images/favicon.ico"/>
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://dceoy.github.io/blog/css/fonts.css">
+  
+  
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
+  
+  
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
+  
+  <link rel="stylesheet" href="https://dceoy.github.io/blog/css/custom.css">
+
+  
+  
+  <link rel="stylesheet" href="https://dceoy.github.io/blog/highlight/styles/github.css">
+  
+  <script src="https://dceoy.github.io/blog/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <meta name="generator" content="Hugo 0.71.0-DEV" />
+  
+</head>
+<body>
+
+<div class="header pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="desktop pure-menu pure-menu-horizontal nav-menu">
+            
+            <a href="https://dceoy.github.io/blog/" class="site-title pure-menu-heading">Lorem Ipsum</a>
+            <ul class="pure-menu-list">
+				
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://dceoy.github.io/blog/about/" class="pure-menu-link">About</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobile pure-menu nav-menu">
+            <a href="https://dceoy.github.io/blog/" class="pure-menu-heading" id="toggle-home">Lorem Ipsum</a>
+            <a href="#" id="toggle-btn">&#9776;</a>
+            <ul class="pure-menu-list" id="toggle-content" style="display:none;">
+                
+				
+                
+				
+                <li class="pure-menu-item">
+                    <a href="https://dceoy.github.io/blog/about" class="pure-menu-link">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+	<div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="post">
+
+            <div class="post-title">
+                <p class="footnote">
+                    <time class="">2015-05-19</time>
+		            
+                    
+                    |
+                    
+                    
+                    tags:<a href="https://dceoy.github.io/blog/tags/python">python</a> <a href="https://dceoy.github.io/blog/tags/twitter">twitter</a> <a href="https://dceoy.github.io/blog/tags/api">api</a> 
+                    
+
+                    
+
+                    
+                </p>
+                <h1>Twitter API から取得できない古いツイートを削除する</h1>
+            </div>
+
+            <div class="post-content">
+                <script type="text/x-mathjax-config">
+                  MathJax.Hub.Config({
+                    tex2jax: {
+                      inlineMath: [['$','$'], ['\\(','\\)']],
+                      displayMath: [['$$','$$'], ['\[','\]']],
+                      processEscapes: true,
+                      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'h5'],
+                    }
+                  });
+                </script>
+                <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+                <script charset="utf-8" type="text/javascript">
+                  amzn_assoc_ad_type = "responsive_search_widget";
+                  amzn_assoc_tracking_id = "dceoy-22";
+                  amzn_assoc_marketplace = "amazon";
+                  amzn_assoc_region = "JP";
+                  amzn_assoc_placement = "";
+                  amzn_assoc_search_type = "search_widget";
+                  amzn_assoc_width = "auto";
+                  amzn_assoc_height = "auto";
+                  amzn_assoc_default_search_category = "";
+                  amzn_assoc_default_search_key = "";
+                  amzn_assoc_theme = "light";
+                  amzn_assoc_bg_color = "FFFFFF";
+                </script>
+
+                <!-- raw HTML omitted -->
+<h5 id="del-twhttpsgithubcomdceoydel-tw"><a href="https://github.com/dceoy/del-tw">del-tw</a></h5>
+<p>Twitter API のユーザータイムライン取得は, <a href="https://dev.twitter.com/rest/reference/get/statuses/user_timeline">最新の 3,200 ツイート</a>までに限られる.<br>
+このため, API 経由でツイートを削除するサービスは 3,200 より古いツイートを削除できない.</p>
+<p>これを解決すべく, 古いツイートも削除するコードを書いた.</p>
+<p>具体的には, 以下の手順で行う.</p>
+<blockquote>
+<ol>
+<li>Twitter から Archive (全ツイート履歴) をダウンロード</li>
+<li>Archive から過去のツイートの Status ID を抽出</li>
+<li>OAuth 認証後, Status ID で REST API を叩き, ツイートを削除</li>
+</ol>
+</blockquote>
+<p><a href="https://github.com/dceoy/del-tw">README</a> に書いたプロセスも上記に従うが, こちらはアーカイブされたツイートを全て削除するので, 取捨選択する場合には適宜対応する.</p>
+<h2 id="your-twitter-archive">Your Twitter Archive</h2>
+<p>Twitter では<a href="https://support.twitter.com/articles/20170160-downloading-your-twitter-archive">自分のツイートのアーカイブ</a>が zip ファイルで提供される.<br>
+中身は HTML や JavaScript で, <code>index.html</code> を開いてツイートをブラウズする.</p>
+<p>ここで個々のツイートのリンクを開けば URL から Status ID を確認可能.<br>
+以下の例では末尾の数字が ID.</p>
+<pre><code>https://twitter.com/dceoy/status/599953191317311488
+</code></pre>
+<p>ツイートの情報は <code>data/js/tweets/</code> 以下に JavaScript として保存されているので, 今回は ID 抽出前にこれらを 1 つの JSON にまとめた.<br>
+集約は Sed で済む.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ sed -e <span style="color:#e6db74">&#39;s/^Grailbird.*$/\[/&#39;</span> archive/data/js/tweets/*.js <span style="color:#ae81ff">\
+</span><span style="color:#ae81ff"></span>    | sed -e <span style="color:#e6db74">&#39;s/Grailbird.*$/,/g&#39;</span> &gt; data/tweets.json
+$ echo <span style="color:#e6db74">&#39;]&#39;</span> &gt;&gt; data/tweets.json
+</code></pre></div><p>出力される JSON は年月単位, ツイート単位の階層を持ち, <code>id_str</code> をキーに ID を抽出できる.<br>
+以降は Python で書いた.</p>
+<h2 id="requests-oauthlib">Requests-OAuthlib</h2>
+<p>操作に認証が必要なので, OAuth のライブラリとして <a href="https://github.com/requests/requests-oauthlib">Requests-OAuthlib</a> を使った.<br>
+認証後は <a href="https://dev.twitter.com/rest/public">REST API</a> を叩く.</p>
+<p><a href="https://dev.twitter.com/rest/reference/post/statuses/destroy/%3Aid">POST statuses/destroy/:id</a></p>
+<p>今回書いた <code>delete_tw.py</code> は, 先述の階層を持つ JSON を引数として渡すと, ID 毎に上の HTTP リクエストを発行し, 該当ツイートを削除する.</p>
+<h2 id="まとめ">まとめ</h2>
+<p>コンパクトに収まったと思う.<br>
+Twitter の REST APIs は流石によくできていて利用しやすい.</p>
+<hr>
+<p>2016-02-29 追記:</p>
+<ul>
+<li><a href="https://github.com/dceoy/deltw/tree/7432913fc4b919db410437548071bbff572cf65c">コードを Python に集約</a>. ZIP を引数に JSON を生成せず実行する.</li>
+</ul>
+<p>2016-11-23 追記:</p>
+<ul>
+<li>
+<p>パッケージ化して GitHub からインストールできるようにした.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># install deltw</span>
+$ pip install -U git+https://github.com/dceoy/deltw
+
+<span style="color:#75715e"># print usage</span>
+$ deltw --help
+
+<span style="color:#75715e"># delete tweets in a zip of witter archive</span>
+$ deltw --credentials tw_credentials.yml --archive /path/to/tweet_archive.zip
+</code></pre></div></li>
+</ul>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+
+                <p>
+                  <a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="dceoy">Tweet</a>
+                  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                </p>
+
+                <p>
+                  <script src="//z-fe.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&Operation=GetScript&ID=OneJS&WS=1&MarketPlace=JP"></script>
+                </p>
+            </div>
+        </div>
+	</div>
+    <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+<div class="footer pure-g">
+    <div class="pure-u-1-24 pure-u-md-5-24"></div>
+    <div class="pure-u-11-12 pure-u-md-5-8">
+        <div class="footer-content">
+		  <div class="pure-menu pure-menu-horizontal">
+              <ul>
+			      
+                  <li class="pure-menu-heading" id="foot-name">dceoy:</li>
+                  
+				  
+                  
+          
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://github.com/dceoy" class="pure-menu-link">GitHub</a>
+                  </li>
+                  
+          
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://www.linkedin.com/in/daichi-narushima-65676641" class="pure-menu-link">LinkedIn</a>
+                  </li>
+                  
+          
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://www.facebook.com/daichi.narushima" class="pure-menu-link">Facebook</a>
+                  </li>
+                  
+          
+                  
+                  <li class="pure-menu-item">
+                      <a href="https://twitter.com/dceoy" class="pure-menu-link">Twitter</a>
+                  </li>
+                  
+          
+              </ul>
+              <a href="#" class="pure-menu-heading pull-right" id="gototop-btn">↑↑</a>
+          </div>
+		  
+		  <p id="foot-copyright">Copyright (c) 2015-2018 dceoy; all rights reserved.</p>
+		  
+		</div>
+	  </div>
+      <div class="pure-u-1-24 pure-u-md-1-6"></div>
+</div>
+
+
+<script src="https://dceoy.github.io/blog/js/jquery.min.js" type="text/javascript"></script>
+<script src="https://dceoy.github.io/blog/js/jquery.timeago.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(function(){
+    $("time.timeago").timeago();
+  })
+  $("#toggle-btn").click(function(){
+    $("#toggle-content").toggle();
+    if($(this).html() === "☰") {
+        $(this).html("X")
+    } else {
+        $(this).html("☰")
+    }
+  });
+  $(window).resize(function(){
+    if(window.innerWidth > 768) {
+      $(".desktop").removeAttr("style");
+    }
+  });
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-27914660-5', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</body>
+</html>
+

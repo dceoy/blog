@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>statistics on Lorem Ipsum</title>
+    <link>https://dceoy.github.io/blog/tags/statistics/</link>
+    <description>Recent content in statistics on Lorem Ipsum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
+    <lastBuildDate>Wed, 03 Jun 2015 19:19:34 +0900</lastBuildDate>
+    
+	<atom:link href="https://dceoy.github.io/blog/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MCMC によるロジステック回帰</title>
+      <link>https://dceoy.github.io/blog/post/r_mcmcpack_logit/</link>
+      <pubDate>Wed, 03 Jun 2015 19:19:34 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_mcmcpack_logit/</guid>
+      <description>マルコフ連鎖モンテカルロ法 (Markov chain Monte Carlo; MCMC) によるベイズ推定を行うソフトウェアとしては, ギブスサンプラー (Gibbs sampler) の BUGS (WinBUGS, OpenBUGS) や JAGS が有名であり, また近年では, ハミルトニアンモンテカルロ法 (Hamiltonian Monte Carlo; HMC) に基づく Stan も勢いがある.
+BUGS は枯れていて実績があり, Stan は従来の MCMC サンプラーと比較して高速・高効率なサンプリングが可能であるなど, それぞれメリットはあるが, いずれもその言語でモデルを記述する必要があるため, 初学者には多少敷居が高い.
+一方, R 上で MCMC を実行する [MCMCpack] (http://mcmcpack.berkeley.edu/) は, インターフェースが R のビルドイン関数に合わせて設計されているため, 少ない事前知識で MCMC を試せる.
+MCMCpack 以下は, MASS パッケージに含まれる乳癌の生検データから, MCMCpack でロジスティック回帰のパラメーターを推定した例.
+MCMClogit() では, glm() と同じような記述でメトロポリス法 (Metropolis algorithm) によるサンプリングを実行できる.
+実装が C++ のため処理も速い.
+まとめ R に慣れていれば MCMCpack は簡単に試せる.</description>
+    </item>
+    
+    <item>
+      <title>ロジスティック回帰に基づく予測と可視化</title>
+      <link>https://dceoy.github.io/blog/post/r_glm_predict/</link>
+      <pubDate>Fri, 22 May 2015 19:02:44 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_glm_predict/</guid>
+      <description>UCLA のページのロジスティック回帰の例に predict で出力した予測確率のグラフがあったので, これを参考に前回の記事のモデルで可視化してみた.
+今回のモデルは 2 つの説明変数を持つため, glucose の値を四分位点毎に固定し, diabetes を横軸, 予測確率を縦軸に取って作図した.
+信頼区間は標準誤差から計算している.
+下図は出力された SVG.
+glm オブジェクトに適用する predict() の実体は predict.glm となる.
+モデルによって扱い方が異なる関数なので, 調べるときは注意が必要.
+今回は信頼区間の計算も自前でしているが, lm オブジェクトを引数に取る predict.lm などには信頼区間や予測区間を出すオプションがある. (predict.glm にはないらしい.)</description>
+    </item>
+    
+    <item>
+      <title>R でのロジスティック回帰と係数の信頼区間</title>
+      <link>https://dceoy.github.io/blog/post/r_glm_confint/</link>
+      <pubDate>Thu, 21 May 2015 05:12:28 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_glm_confint/</guid>
+      <description>[ \ln(\frac{ p }{ 1 - p }) = \alpha + \beta_1 x_1 + \beta_2 x_2 ]
+R でのロジスティック回帰には, 一般化線形モデル (Generalized Linear Model; GLM) を扱う glm をよく使うが, この返り値に confint を当てれば回帰係数の信頼区間 (Confidence Interval; CI) を算出できる.
+今回は, パッケージ faraway で得られるピマインディアンの糖尿病検査のデータ pima を例に, ロジスティック回帰を行い, 係数の信頼区間を計算した.
+オッズ比は回帰係数で exp() を取れば算出される.</description>
+    </item>
+    
+    <item>
+      <title>ggplot2 で描く forest plot</title>
+      <link>https://dceoy.github.io/blog/post/r_ggplot2_forest/</link>
+      <pubDate>Mon, 11 May 2015 23:56:03 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_ggplot2_forest/</guid>
+      <description>forest plot は, オッズ比や相対リスクの点推定値と信頼区間を順に並べる描画方法で, meta-analysis の可視化にしばしば用いられる.
+これを R で簡潔に描くライブラリを探したが, 扱いやすいものがなかったので ggplot2 でコードを書いた.
+ggplot2 合理的に美麗なグラフを描ける R のパッケージ.
+人気があるライブラリで使ってる R ユーザーも多いと思う.
+多様なグラフを統一的なインターフェースで作成できる.
+forest plot using ggplot2 複数のオッズ比の点推定値と信頼区間の図示に主眼を置いた.
+meta-analysis では, 各研究の重みや菱型で表す統合オッズ比などを含めるケースもあるが, 自分の用途では必要なかったのでそれらは対応していない.
+以下は描画コードと読み込むオッズ比のサンプル.
+ggplot2 は forest plot を想定した関数は備えていないようだったので, 点と区間を表現する geom_pointrange を使った.
+オッズ比のサンプルは以前書いた Fisher exact test の記事と同じ方法で作った.
+下図は出力された SVG.
+まとめ 比較的簡単に書けた.
+ただ, 重みや統合オッズ比まで必要な場合は meta-analysis のパッケージを利用した方が無難かもしれない.
+このコードを最初に書いた 2014 年春頃は forest plot 専用のパッケージを見かけなかったが, 最近はあるらしい.</description>
+    </item>
+    
+    <item>
+      <title>行列の各行で Fisher の正確な検定</title>
+      <link>https://dceoy.github.io/blog/post/r_row_fisher_test/</link>
+      <pubDate>Fri, 08 May 2015 00:28:33 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_row_fisher_test/</guid>
+      <description>R で複数の 2 x 2 分割表に対して Fisher の検定で正確な p 値を計算したい, という課題にぶつかったので, 各セルの数値を束ねた行列に対して p 値を算出するコードを書いた.
+stackoverflow にも 似た質問 があったので参照のこと.
+fisher.test 2 x 2 分割表 (2 x 2 contingency table) の独立性の検定には, 一般的に x2検定 (Chi-square test) が用いられるが, これは頻度が少なくなると近似が悪くなるので, その場合は正確な p 値を計算する Fisher の正確な検定 (Fisher exact test) を行う方が適している.
+R では組み込みの fisher.test で p 値を算出できる.
+この関数はオッズ比と信頼区間も出力するが, こちらは計算方法が異なるので注意が必要.
+こうした正確な検定は計算量が多いため, 処理に時間がかかる.
+Fisher test on each row of data table 普段使う dplyr と data.table に加え, snow での並列化を前提とした.
+下記のコードは, 分割表のセルの数値を束ねた data.</description>
+    </item>
+    
+  </channel>
+</rss>

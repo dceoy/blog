@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Lorem Ipsum</title>
+    <link>https://dceoy.github.io/blog/post/</link>
+    <description>Recent content in Posts on Lorem Ipsum</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 22 Apr 2018 10:58:37 +0000</lastBuildDate>
+    
+	<atom:link href="https://dceoy.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hugo on Docker</title>
+      <link>https://dceoy.github.io/blog/post/docker_hugo/</link>
+      <pubDate>Sun, 22 Apr 2018 10:58:37 +0000</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/docker_hugo/</guid>
+      <description>dceoy/docker-hugo 2 年半近くブログ記事を書いていなかったが, その間に作ったものも GitHub に溜まってきたので, それをネタに少し記事を書いていくことにした. 今回は Docker を使った Hugo ベースのブログ運用について.
+Blog powered by Hugo 過去の記事に書いたように, このブログは Hugo を使って生成しているが, それでもあまりにブログを書いていないので使い方を忘れてしまうという (些末な) 課題が生じた.
+しかし, それで毎回ググっていたのでは手間なので, 面倒な作業は Docker Compose で行うようにした.
+Docker を使うので編集環境に Hugo をインストールする必要もなくなる.
+Docker image for Hugo まずは Hugo の Docker image を作った.
+  Docker image: dceoy/hugo @ Docker Hub
+  Dockerfile: dceoy/docker-hugo @ GitHub
+  Hugo with Docker Compose このブログのビルド &amp;amp; デプロイは Wercker と GitHub Pages で自動化してあるので, 自分で使うコマンドは hugo new (記事生成) と hugo server (web サーバー起動) くらいである.</description>
+    </item>
+    
+    <item>
+      <title>カフェインの薬理</title>
+      <link>https://dceoy.github.io/blog/post/caffeine_pharmacology/</link>
+      <pubDate>Sun, 13 Dec 2015 03:49:46 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/caffeine_pharmacology/</guid>
+      <description>コーヒー Advent Calendar 2015 の 13 日目の記事です.
+私はよく, 生豆の店で焙煎してもらった豆を買い, 家で挽いてハンドドリップで抽出して飲んでいます.
+豆は毎回別の産地のものを買って, 違いを味わうのがちょっとした楽しみです.
+そのようにコーヒーは好きなのですが, 空腹時に何杯も飲むと調子が悪くなることがあります.
+今回の記事はその原因であろう成分, カフェインについて書きます.
+Caffeine カフェインは, コーヒー (0.8 ~ 2.3 %), 茶 (2 ~ 4 %), ココア (0.05 ~ 0.8 %), コーラ (2 ~ 4 %) など嗜好品として最も多く用いられる中枢興奮薬であり, また, 頭痛薬 (特に片頭痛, 高血圧性頭痛) や風邪薬に配合され, 医薬品としても用いられる.
+化学構造 カフェイン. キサンチン誘導体. アルカロイド. 水には微溶.
+キサンチンのメチル誘導体としては他にテオフィリン, テオブロミンがある.
+テオフィリンは茶, テオブロミンはココアなどに含まれる.
+作用機序  ホスホジエステラーゼの阻害による cAMP の増加 アデノシン受容体の非特異的拮抗作用 細胞内貯蔵 Ca2+の遊離促進作用  これらの内, アデノシン受容体拮抗作用は言及されることが多いと思う.
+アデノシン. アデニンとリボースからなるヌクレオシド.
+カフェインはアデニンと同じくプリン骨格を有しているので, 拮抗作用も想像に難くない.
+薬理作用  中枢神経系  大脳皮質及び延髄中枢の興奮を起こす.</description>
+    </item>
+    
+    <item>
+      <title>HTTP サーバーでユーザーのディレクトリを公開する</title>
+      <link>https://dceoy.github.io/blog/post/nginx_http_dev/</link>
+      <pubDate>Sat, 12 Dec 2015 22:48:57 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/nginx_http_dev/</guid>
+      <description>VirtualBox や VMware を使ってローカルのマシンに Linux の環境を作り, データ分析やソフトウェア開発をする際, ホストのブラウザからコンテンツを見たくなることがある.
+Python 組み込みの HTTP サーバーを使えば, これは簡単に実現する.
+Python HTTP Server Python 2
+$ python -m SimpleHTTPServer Python 3
+$ python -m http.server これは Web 系でなくても使えるテクニックで, 例えば, データ分析で出てきた結果の画像ファイルを見たりするのに使える.
+しかし, 毎回コマンドを実行するのは面倒だし, Python のサーバーは遅い.
+それが気になる場合は, デーモンで HTTP サーバーを実行し, ホーム下のディレクトリを公開すればいい.
+自分はこの用途で Nginx を使っている.
+Nginx 軽量で高速, 高機能な HTTP サーバー.
+Web サーバーといえば Apache のシェアが大きいが, 近年は Nginx もよく使われる.
+以下は Nginx を開発環境で使うまでの手順の例.
+ Nginx をインストール SELinux を設定する, もしくは切る Firewall で HTTP を許可する, もしくは切る 公開ディレクトリのパーミッションを設定 Nginx のドキュメントルートに公開ディレクトリのシンボリックリンクを貼る ディレクトリ一覧を見えるようにする (nginx.</description>
+    </item>
+    
+    <item>
+      <title>RStudio Server on Docker</title>
+      <link>https://dceoy.github.io/blog/post/docker_rstudio_server/</link>
+      <pubDate>Wed, 09 Dec 2015 23:28:45 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/docker_rstudio_server/</guid>
+      <description>dceoy/docker-rstudio-server RStudio Server の Dockerfile を作った.
+Ubuntu のベースイメージからで latest の RStudio Server をインストールして起動する.
+ビルドしたイメージは Docker Hub からも利用可能.
+$ docker pull dceoy/rstudio-server ついでに Fabric でイメージをデプロイするコードを書いた.
+とりあえず DigitalOcean を想定したが, 他のサーバーでも使用可.
+dceoy/fab-rstudio-docker  2016-07-03 追記:
+ リポジトリ名を GitHub で rstudio-server-docker から docker-rstudio-server に, Docker Hub で rstudio から rstudio-server に変更.  </description>
+    </item>
+    
+    <item>
+      <title>SQLite で構築する MedDRA データベース</title>
+      <link>https://dceoy.github.io/blog/post/meddra_sqlite/</link>
+      <pubDate>Tue, 08 Dec 2015 00:42:15 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/meddra_sqlite/</guid>
+      <description>meddra-sqlite ICH 国際医薬用語集 MedDRA の日本版, MedDRA/J からリレーショナルデータベースを構築するコード.
+以前書いて GitHub に上げていたものを整理した.
+テーブルを定義する SQL とマイグレーションのための bash スクリプトが主体.
+SQLite3 データベースを構築し, ついでにダンプする.
+テーブル定義の SQL とダンプした後の SQL は PostgreSQL などでも使えるかも (動作未検証) .</description>
+    </item>
+    
+    <item>
+      <title>MCMC によるロジステック回帰</title>
+      <link>https://dceoy.github.io/blog/post/r_mcmcpack_logit/</link>
+      <pubDate>Wed, 03 Jun 2015 19:19:34 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_mcmcpack_logit/</guid>
+      <description>マルコフ連鎖モンテカルロ法 (Markov chain Monte Carlo; MCMC) によるベイズ推定を行うソフトウェアとしては, ギブスサンプラー (Gibbs sampler) の BUGS (WinBUGS, OpenBUGS) や JAGS が有名であり, また近年では, ハミルトニアンモンテカルロ法 (Hamiltonian Monte Carlo; HMC) に基づく Stan も勢いがある.
+BUGS は枯れていて実績があり, Stan は従来の MCMC サンプラーと比較して高速・高効率なサンプリングが可能であるなど, それぞれメリットはあるが, いずれもその言語でモデルを記述する必要があるため, 初学者には多少敷居が高い.
+一方, R 上で MCMC を実行する [MCMCpack] (http://mcmcpack.berkeley.edu/) は, インターフェースが R のビルドイン関数に合わせて設計されているため, 少ない事前知識で MCMC を試せる.
+MCMCpack 以下は, MASS パッケージに含まれる乳癌の生検データから, MCMCpack でロジスティック回帰のパラメーターを推定した例.
+MCMClogit() では, glm() と同じような記述でメトロポリス法 (Metropolis algorithm) によるサンプリングを実行できる.
+実装が C++ のため処理も速い.
+まとめ R に慣れていれば MCMCpack は簡単に試せる.</description>
+    </item>
+    
+    <item>
+      <title>ロジスティック回帰に基づく予測と可視化</title>
+      <link>https://dceoy.github.io/blog/post/r_glm_predict/</link>
+      <pubDate>Fri, 22 May 2015 19:02:44 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_glm_predict/</guid>
+      <description>UCLA のページのロジスティック回帰の例に predict で出力した予測確率のグラフがあったので, これを参考に前回の記事のモデルで可視化してみた.
+今回のモデルは 2 つの説明変数を持つため, glucose の値を四分位点毎に固定し, diabetes を横軸, 予測確率を縦軸に取って作図した.
+信頼区間は標準誤差から計算している.
+下図は出力された SVG.
+glm オブジェクトに適用する predict() の実体は predict.glm となる.
+モデルによって扱い方が異なる関数なので, 調べるときは注意が必要.
+今回は信頼区間の計算も自前でしているが, lm オブジェクトを引数に取る predict.lm などには信頼区間や予測区間を出すオプションがある. (predict.glm にはないらしい.)</description>
+    </item>
+    
+    <item>
+      <title>R でのロジスティック回帰と係数の信頼区間</title>
+      <link>https://dceoy.github.io/blog/post/r_glm_confint/</link>
+      <pubDate>Thu, 21 May 2015 05:12:28 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_glm_confint/</guid>
+      <description>[ \ln(\frac{ p }{ 1 - p }) = \alpha + \beta_1 x_1 + \beta_2 x_2 ]
+R でのロジスティック回帰には, 一般化線形モデル (Generalized Linear Model; GLM) を扱う glm をよく使うが, この返り値に confint を当てれば回帰係数の信頼区間 (Confidence Interval; CI) を算出できる.
+今回は, パッケージ faraway で得られるピマインディアンの糖尿病検査のデータ pima を例に, ロジスティック回帰を行い, 係数の信頼区間を計算した.
+オッズ比は回帰係数で exp() を取れば算出される.</description>
+    </item>
+    
+    <item>
+      <title>Twitter API から取得できない古いツイートを削除する</title>
+      <link>https://dceoy.github.io/blog/post/py_twitter_deltw/</link>
+      <pubDate>Tue, 19 May 2015 22:16:50 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/py_twitter_deltw/</guid>
+      <description>del-tw Twitter API のユーザータイムライン取得は, 最新の 3,200 ツイートまでに限られる.
+このため, API 経由でツイートを削除するサービスは 3,200 より古いツイートを削除できない.
+これを解決すべく, 古いツイートも削除するコードを書いた.
+具体的には, 以下の手順で行う.
+  Twitter から Archive (全ツイート履歴) をダウンロード Archive から過去のツイートの Status ID を抽出 OAuth 認証後, Status ID で REST API を叩き, ツイートを削除   README に書いたプロセスも上記に従うが, こちらはアーカイブされたツイートを全て削除するので, 取捨選択する場合には適宜対応する.
+Your Twitter Archive Twitter では自分のツイートのアーカイブが zip ファイルで提供される.
+中身は HTML や JavaScript で, index.html を開いてツイートをブラウズする.
+ここで個々のツイートのリンクを開けば URL から Status ID を確認可能.
+以下の例では末尾の数字が ID.
+https://twitter.com/dceoy/status/599953191317311488  ツイートの情報は data/js/tweets/ 以下に JavaScript として保存されているので, 今回は ID 抽出前にこれらを 1 つの JSON にまとめた.</description>
+    </item>
+    
+    <item>
+      <title>ggplot2 で描く heatmap</title>
+      <link>https://dceoy.github.io/blog/post/r_ggplot2_heatmap/</link>
+      <pubDate>Thu, 14 May 2015 23:52:26 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_ggplot2_heatmap/</guid>
+      <description>heatmap は比較的メジャーな可視化方法なので, 使える R のパッケージも多い.
+ggplot2 でも矩形を敷き詰める geom_tile で heatmap のような表現が可能になる.
+heatmap using ggplot2 以下は描画コードと値のサンプル.
+heatmap は図に対応した値の行列から作図するケースが少なくないと思うが, ggplot2 では上のように, 行列の位置と値をレコードとして持つテーブルから作図する.
+前者はスプレッドシートからの移植性などには優れるものの, 図の列が増えたときにデータが横に広がって処理が煩雑になるが, 後者はその心配がない.
+サンプルのデータはシェルからワンライナーで作った.
+$ echo &amp;#39;row,col,val&amp;#39; &amp;gt; matrix.csv $ seq -w 0 55 | grep -v &amp;#39;[6-9]&amp;#39; | sed -e &amp;#39;s/\(.\)\(.\)/\1 \2/g&amp;#39; | awk &amp;#39;{ print &amp;#34;row&amp;#34;$1&amp;#34;,col&amp;#34;$2&amp;#34;,&amp;#34;exp(rand() * 10) }&amp;#39; &amp;gt;&amp;gt; matrix.csv 下図は出力された SVG.
+まとめ データを位置と値のテーブルとして入力する点が良かった.
+この形式は SQL で抽出したデータを可視化するときなどに有利になる.</description>
+    </item>
+    
+    <item>
+      <title>ggplot2 で描く forest plot</title>
+      <link>https://dceoy.github.io/blog/post/r_ggplot2_forest/</link>
+      <pubDate>Mon, 11 May 2015 23:56:03 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_ggplot2_forest/</guid>
+      <description>forest plot は, オッズ比や相対リスクの点推定値と信頼区間を順に並べる描画方法で, meta-analysis の可視化にしばしば用いられる.
+これを R で簡潔に描くライブラリを探したが, 扱いやすいものがなかったので ggplot2 でコードを書いた.
+ggplot2 合理的に美麗なグラフを描ける R のパッケージ.
+人気があるライブラリで使ってる R ユーザーも多いと思う.
+多様なグラフを統一的なインターフェースで作成できる.
+forest plot using ggplot2 複数のオッズ比の点推定値と信頼区間の図示に主眼を置いた.
+meta-analysis では, 各研究の重みや菱型で表す統合オッズ比などを含めるケースもあるが, 自分の用途では必要なかったのでそれらは対応していない.
+以下は描画コードと読み込むオッズ比のサンプル.
+ggplot2 は forest plot を想定した関数は備えていないようだったので, 点と区間を表現する geom_pointrange を使った.
+オッズ比のサンプルは以前書いた Fisher exact test の記事と同じ方法で作った.
+下図は出力された SVG.
+まとめ 比較的簡単に書けた.
+ただ, 重みや統合オッズ比まで必要な場合は meta-analysis のパッケージを利用した方が無難かもしれない.
+このコードを最初に書いた 2014 年春頃は forest plot 専用のパッケージを見かけなかったが, 最近はあるらしい.</description>
+    </item>
+    
+    <item>
+      <title>Gist に置いた HTML を Web ページとして表示する</title>
+      <link>https://dceoy.github.io/blog/post/gist_html/</link>
+      <pubDate>Sat, 09 May 2015 13:57:52 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/gist_html/</guid>
+      <description>少し前まで JavaScript や CSS, SVG のちょっとしたコードを埋めた HTML のデモを GitHub Pages のリポジトリに置いていたが, ブログを走らせるようになったので場所を Gist に移した.
+Gist に置いた HTML は RawGit を利用すると Web ページとして表示できる.
+RawGit GitHub や Gist に置いた HTML や JavaScript の raw ファイルを, 適当な content type で供給するサービスで, CDN のように使うことが可能.
+ファイルへのリンクは rawgit.com のフォームから作成する.
+以前は rawgithub.com というドメインだった.
+今回 Gist に移したコード  Accordion Menu &amp;mdash; demo / gist   CSS と jQuery で作った, 画像を使わない Accordion Menu.
+  Word Clouds &amp;mdash; demo / gist   D3 と d3-cloud で動く Word Clouds のデモ.</description>
+    </item>
+    
+    <item>
+      <title>行列の各行で Fisher の正確な検定</title>
+      <link>https://dceoy.github.io/blog/post/r_row_fisher_test/</link>
+      <pubDate>Fri, 08 May 2015 00:28:33 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_row_fisher_test/</guid>
+      <description>R で複数の 2 x 2 分割表に対して Fisher の検定で正確な p 値を計算したい, という課題にぶつかったので, 各セルの数値を束ねた行列に対して p 値を算出するコードを書いた.
+stackoverflow にも 似た質問 があったので参照のこと.
+fisher.test 2 x 2 分割表 (2 x 2 contingency table) の独立性の検定には, 一般的に x2検定 (Chi-square test) が用いられるが, これは頻度が少なくなると近似が悪くなるので, その場合は正確な p 値を計算する Fisher の正確な検定 (Fisher exact test) を行う方が適している.
+R では組み込みの fisher.test で p 値を算出できる.
+この関数はオッズ比と信頼区間も出力するが, こちらは計算方法が異なるので注意が必要.
+こうした正確な検定は計算量が多いため, 処理に時間がかかる.
+Fisher test on each row of data table 普段使う dplyr と data.table に加え, snow での並列化を前提とした.
+下記のコードは, 分割表のセルの数値を束ねた data.</description>
+    </item>
+    
+    <item>
+      <title>CSV を任意のセパレーターに変換して出力するコマンドを作った</title>
+      <link>https://dceoy.github.io/blog/post/go_cli_psv/</link>
+      <pubDate>Thu, 07 May 2015 00:15:37 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/go_cli_psv/</guid>
+      <description>dceoy/psv 一般的なデータ処理の課題では, わざわざコードを書かなくてもシェル上で済む, ということがよくある.
+ワンライナーで問題が一瞬に解決すると嬉しい.
+そんなスタンスで, CSV のデータをコマンドラインで処理する機会があった.
+単純に考えれば, Awk でセパレーターをカンマにセットすれば, 各フィールドの値を取れる.
+しかしそれでは, 以下のようにフィールド内にカンマがある場合に正しくパースできない.
+&amp;quot;fugit&amp;quot;,&amp;quot;quo, dolor&amp;quot;,&amp;quot;quos&amp;quot;  CSV は一見簡単に見えるが, これ以外にも考慮することが実は多く, 安易にパースしない方がいいらしい.
+そこで, 既存のパーサーを使って CSV を読むコマンドを作った.
+実装した機能は, 「フィールドセパレーターのカンマを任意の値に換えて出力する」のみ.
+一旦ユニークなセパレーターで出力すれば, 後は Awk に渡せるのでハッピー.
+cli.go 今回のものは軽いなので, 以前から興味のあった Go で書くことにした.
+一応コマンドとしての体裁が欲しいので cli.go というパッケージを使った.
+cli.go はコマンドラインツールのフレームワークのようなもので, 迅速な開発を助けてくれる.
+psv Go の環境がある場合, 以下でインストールする.
+$ go get github.com/dceoy/psv -s オプションでカンマに置き換えるセパレーターを渡して使う.
+結果は標準出力に出る.
+$ psv -s [separator] example.csv -s を設定しない場合はカンマがセパレーターとして渡る.
+入力は 1 つの CSV ファイルを想定しているが, 標準入力も受け取れる.
+内部では Go の encoding/csv で CSV を読んでいる.</description>
+    </item>
+    
+    <item>
+      <title>R スクリプトでパッケージをインストール</title>
+      <link>https://dceoy.github.io/blog/post/r_pkg/</link>
+      <pubDate>Wed, 06 May 2015 01:22:33 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/r_pkg/</guid>
+      <description>R のコンソールから CRAN ミラーを選んでパッケージをインストールするのは面倒なので, 以下のように書いてスクリプトの中で処理している.
+スクリプトの上流に貼れば, ローカルにないパッケージがあっても, インストール, アップデート, ロードを自動でやってくれるので, 手間が減る.</description>
+    </item>
+    
+    <item>
+      <title>Fabric による開発環境の管理</title>
+      <link>https://dceoy.github.io/blog/post/py_fabric_fabkit/</link>
+      <pubDate>Tue, 05 May 2015 02:48:32 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/py_fabric_fabkit/</guid>
+      <description>dceoy/fabkit Linux や Mac を使うエンジニアが &amp;ldquo;.&amp;rdquo; から始まる設定ファイルをクラウドで管理することはあると思う.
+自分も Zsh や Vim を使うので .zshrc や .vimrc などを GitHub に置いている.
+新しい環境でも dotfiles を clone してシンボリックリンクを貼れば, すぐに使い慣れたシェルやエディターを使えて便利.
+&amp;hellip; と, 初めはそれだけだったが, 次第にシェルやエディタ以外の環境も同じようにしたいと考え始め, そのためのスクリプトもリポジトリに置くようになった.
+現在はそれを Fabric に集約し, プロビジョニングのインターフェースを整えている.
+Fabric サーバーのプロビジョニングというば Chef や Puppet が有名で, 最近では Ansible も人気がある.
+Fabric も同様, プロビジョニングの自動化に使えるが, 上記のものより小さくシンプルで, SSH 経由でシェルコマンドを実行するツール.
+そのシンプルさ故, 学習コストが小さくて済むのが特徴.
+Fabric は Python で書かれており, pip や easy_install からインストールできる.
+現時点では Python 3 に対応していない.
+$ pip install -U fabric タスクの実行は以下の通り.
+$ fab [options] &amp;lt;command&amp;gt;[:arg1,arg2=val2,host=foo,hosts=&amp;#39;h1;h2&amp;#39;,.</description>
+    </item>
+    
+    <item>
+      <title>Hugo でブログを作った</title>
+      <link>https://dceoy.github.io/blog/post/hugo_blog/</link>
+      <pubDate>Thu, 30 Apr 2015 00:53:48 +0900</pubDate>
+      
+      <guid>https://dceoy.github.io/blog/post/hugo_blog/</guid>
+      <description>以前, はてなブログで Web 関連の技術ブログを書いていたが, 無料プランでは広告が出るので自分でビルドした.
+作成に際し, 知り合いのエンジニアが使っていた Python 製 Sphinx ベースの Tinkerer というツールにも興味を持ったが, reST でなく Markdown で書きたいので他のものを探した.
+当初, 過去に試したことがあった Ruby 製の Octopress を考えたが, 移行した人のブログ記事を読んで, 最終的に Hugo を使うことにした.
+Hugo Go で書かれた静的サイトエンジン.
+他のツールと比較して記事の生成速度に優れている.
+Go の環境があれば以下でインストールできる.
+$ go get -v github.com/spf13/hugo Mac OS X では Homebrew からもインストール可能.
+また, バイナリでも配布されている.
+記事は Markdown で書き, ビルドインサーバーでプレビューできる.
+以下はテーマ nofancy を指定してサーバーを起動する例.
+$ hugo server -w -D -t nofancy Wercker CI ブログのホストには GitHub Pages を利用し, 公式のチュートリアルを参考に, Wercker CI でデプロイまで自動化した.</description>
+    </item>
+    
+  </channel>
+</rss>
