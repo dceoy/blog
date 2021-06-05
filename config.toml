@@ -1,7 +1,7 @@
 contentdir = 'content'
 layoutdir = 'layouts'
 publishdir = 'public'
-baseurl = 'https://dceoy.github.io/blog/'
+baseurl = '//dceoy.github.io/blog/'
 title = 'Lorem Ipsum'
 canonifyurls = true
 copyright = 'Copyright (c) 2015-2018 dceoy; all rights reserved.'
