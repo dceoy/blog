@@ -1,30 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>rstudio_server on Lorem Ipsum</title>
-    <link>https://dceoy.github.io/blog/tags/rstudio_server/</link>
-    <description>Recent content in rstudio_server on Lorem Ipsum</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
-    <lastBuildDate>Wed, 09 Dec 2015 23:28:45 +0900</lastBuildDate>
-    
-	<atom:link href="https://dceoy.github.io/blog/tags/rstudio_server/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>RStudio Server on Docker</title>
-      <link>https://dceoy.github.io/blog/post/docker_rstudio_server/</link>
-      <pubDate>Wed, 09 Dec 2015 23:28:45 +0900</pubDate>
-      
-      <guid>https://dceoy.github.io/blog/post/docker_rstudio_server/</guid>
-      <description>dceoy/docker-rstudio-server RStudio Server の Dockerfile を作った.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>rstudio_server on Lorem Ipsum</title><link>//dceoy.github.io/blog/tags/rstudio_server/</link><description>Recent content in rstudio_server on Lorem Ipsum</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright><lastBuildDate>Wed, 09 Dec 2015 23:28:45 +0900</lastBuildDate><atom:link href="//dceoy.github.io/blog/tags/rstudio_server/index.xml" rel="self" type="application/rss+xml"/><item><title>RStudio Server on Docker</title><link>//dceoy.github.io/blog/post/docker_rstudio_server/</link><pubDate>Wed, 09 Dec 2015 23:28:45 +0900</pubDate><guid>//dceoy.github.io/blog/post/docker_rstudio_server/</guid><description>dceoy/docker-rstudio-server RStudio Server の Dockerfile を作った.
 Ubuntu のベースイメージからで latest の RStudio Server をインストールして起動する.
 ビルドしたイメージは Docker Hub からも利用可能.
 $ docker pull dceoy/rstudio-server ついでに Fabric でイメージをデプロイするコードを書いた.
 とりあえず DigitalOcean を想定したが, 他のサーバーでも使用可.
-dceoy/fab-rstudio-docker  2016-07-03 追記:
- リポジトリ名を GitHub で rstudio-server-docker から docker-rstudio-server に, Docker Hub で rstudio から rstudio-server に変更.  </description>
-    </item>
-    
-  </channel>
-</rss>
+dceoy/fab-rstudio-docker 2016-07-03 追記:
+リポジトリ名を GitHub で rstudio-server-docker から docker-rstudio-server に, Docker Hub で rstudio から rstudio-server に変更.</description></item></channel></rss>

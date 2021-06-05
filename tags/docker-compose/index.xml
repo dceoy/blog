@@ -1,31 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>docker-compose on Lorem Ipsum</title>
-    <link>https://dceoy.github.io/blog/tags/docker-compose/</link>
-    <description>Recent content in docker-compose on Lorem Ipsum</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 22 Apr 2018 10:58:37 +0000</lastBuildDate>
-    
-	<atom:link href="https://dceoy.github.io/blog/tags/docker-compose/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Hugo on Docker</title>
-      <link>https://dceoy.github.io/blog/post/docker_hugo/</link>
-      <pubDate>Sun, 22 Apr 2018 10:58:37 +0000</pubDate>
-      
-      <guid>https://dceoy.github.io/blog/post/docker_hugo/</guid>
-      <description>dceoy/docker-hugo 2 年半近くブログ記事を書いていなかったが, その間に作ったものも GitHub に溜まってきたので, それをネタに少し記事を書いていくことにした. 今回は Docker を使った Hugo ベースのブログ運用について.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>docker-compose on Lorem Ipsum</title><link>//dceoy.github.io/blog/tags/docker-compose/</link><description>Recent content in docker-compose on Lorem Ipsum</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright><lastBuildDate>Sun, 22 Apr 2018 10:58:37 +0000</lastBuildDate><atom:link href="//dceoy.github.io/blog/tags/docker-compose/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo on Docker</title><link>//dceoy.github.io/blog/post/docker_hugo/</link><pubDate>Sun, 22 Apr 2018 10:58:37 +0000</pubDate><guid>//dceoy.github.io/blog/post/docker_hugo/</guid><description>dceoy/docker-hugo 2 年半近くブログ記事を書いていなかったが, その間に作ったものも GitHub に溜まってきたので, それをネタに少し記事を書いていくことにした. 今回は Docker を使った Hugo ベースのブログ運用について.
 Blog powered by Hugo 過去の記事に書いたように, このブログは Hugo を使って生成しているが, それでもあまりにブログを書いていないので使い方を忘れてしまうという (些末な) 課題が生じた.
 しかし, それで毎回ググっていたのでは手間なので, 面倒な作業は Docker Compose で行うようにした.
 Docker を使うので編集環境に Hugo をインストールする必要もなくなる.
 Docker image for Hugo まずは Hugo の Docker image を作った.
-  Docker image: dceoy/hugo @ Docker Hub
-  Dockerfile: dceoy/docker-hugo @ GitHub
-  Hugo with Docker Compose このブログのビルド &amp;amp; デプロイは Wercker と GitHub Pages で自動化してあるので, 自分で使うコマンドは hugo new (記事生成) と hugo server (web サーバー起動) くらいである.</description>
-    </item>
-    
-  </channel>
-</rss>
+Docker image: dceoy/hugo @ Docker Hub
+Dockerfile: dceoy/docker-hugo @ GitHub
+Hugo with Docker Compose このブログのビルド &amp;amp; デプロイは Wercker と GitHub Pages で自動化してあるので, 自分で使うコマンドは hugo new (記事生成) と hugo server (web サーバー起動) くらいである.</description></item></channel></rss>

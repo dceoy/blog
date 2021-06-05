@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>python on Lorem Ipsum</title>
-    <link>https://dceoy.github.io/blog/tags/python/</link>
-    <description>Recent content in python on Lorem Ipsum</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
-    <lastBuildDate>Sat, 12 Dec 2015 22:48:57 +0900</lastBuildDate>
-    
-	<atom:link href="https://dceoy.github.io/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>HTTP サーバーでユーザーのディレクトリを公開する</title>
-      <link>https://dceoy.github.io/blog/post/nginx_http_dev/</link>
-      <pubDate>Sat, 12 Dec 2015 22:48:57 +0900</pubDate>
-      
-      <guid>https://dceoy.github.io/blog/post/nginx_http_dev/</guid>
-      <description>VirtualBox や VMware を使ってローカルのマシンに Linux の環境を作り, データ分析やソフトウェア開発をする際, ホストのブラウザからコンテンツを見たくなることがある.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>python on Lorem Ipsum</title><link>//dceoy.github.io/blog/tags/python/</link><description>Recent content in python on Lorem Ipsum</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright><lastBuildDate>Sat, 12 Dec 2015 22:48:57 +0900</lastBuildDate><atom:link href="//dceoy.github.io/blog/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>HTTP サーバーでユーザーのディレクトリを公開する</title><link>//dceoy.github.io/blog/post/nginx_http_dev/</link><pubDate>Sat, 12 Dec 2015 22:48:57 +0900</pubDate><guid>//dceoy.github.io/blog/post/nginx_http_dev/</guid><description>VirtualBox や VMware を使ってローカルのマシンに Linux の環境を作り, データ分析やソフトウェア開発をする際, ホストのブラウザからコンテンツを見たくなることがある.
 Python 組み込みの HTTP サーバーを使えば, これは簡単に実現する.
 Python HTTP Server Python 2
 $ python -m SimpleHTTPServer Python 3
@@ -28,34 +9,16 @@ $ python -m http.server これは Web 系でなくても使えるテクニック
 Nginx 軽量で高速, 高機能な HTTP サーバー.
 Web サーバーといえば Apache のシェアが大きいが, 近年は Nginx もよく使われる.
 以下は Nginx を開発環境で使うまでの手順の例.
- Nginx をインストール SELinux を設定する, もしくは切る Firewall で HTTP を許可する, もしくは切る 公開ディレクトリのパーミッションを設定 Nginx のドキュメントルートに公開ディレクトリのシンボリックリンクを貼る ディレクトリ一覧を見えるようにする (nginx.</description>
-    </item>
-    
-    <item>
-      <title>Twitter API から取得できない古いツイートを削除する</title>
-      <link>https://dceoy.github.io/blog/post/py_twitter_deltw/</link>
-      <pubDate>Tue, 19 May 2015 22:16:50 +0900</pubDate>
-      
-      <guid>https://dceoy.github.io/blog/post/py_twitter_deltw/</guid>
-      <description>del-tw Twitter API のユーザータイムライン取得は, 最新の 3,200 ツイートまでに限られる.
+Nginx をインストール SELinux を設定する, もしくは切る Firewall で HTTP を許可する, もしくは切る 公開ディレクトリのパーミッションを設定 Nginx のドキュメントルートに公開ディレクトリのシンボリックリンクを貼る ディレクトリ一覧を見えるようにする (nginx.</description></item><item><title>Twitter API から取得できない古いツイートを削除する</title><link>//dceoy.github.io/blog/post/py_twitter_deltw/</link><pubDate>Tue, 19 May 2015 22:16:50 +0900</pubDate><guid>//dceoy.github.io/blog/post/py_twitter_deltw/</guid><description>del-tw Twitter API のユーザータイムライン取得は, 最新の 3,200 ツイートまでに限られる.
 このため, API 経由でツイートを削除するサービスは 3,200 より古いツイートを削除できない.
 これを解決すべく, 古いツイートも削除するコードを書いた.
 具体的には, 以下の手順で行う.
-  Twitter から Archive (全ツイート履歴) をダウンロード Archive から過去のツイートの Status ID を抽出 OAuth 認証後, Status ID で REST API を叩き, ツイートを削除   README に書いたプロセスも上記に従うが, こちらはアーカイブされたツイートを全て削除するので, 取捨選択する場合には適宜対応する.
+Twitter から Archive (全ツイート履歴) をダウンロード Archive から過去のツイートの Status ID を抽出 OAuth 認証後, Status ID で REST API を叩き, ツイートを削除 README に書いたプロセスも上記に従うが, こちらはアーカイブされたツイートを全て削除するので, 取捨選択する場合には適宜対応する.
 Your Twitter Archive Twitter では自分のツイートのアーカイブが zip ファイルで提供される.
 中身は HTML や JavaScript で, index.html を開いてツイートをブラウズする.
 ここで個々のツイートのリンクを開けば URL から Status ID を確認可能.
 以下の例では末尾の数字が ID.
-https://twitter.com/dceoy/status/599953191317311488  ツイートの情報は data/js/tweets/ 以下に JavaScript として保存されているので, 今回は ID 抽出前にこれらを 1 つの JSON にまとめた.</description>
-    </item>
-    
-    <item>
-      <title>Fabric による開発環境の管理</title>
-      <link>https://dceoy.github.io/blog/post/py_fabric_fabkit/</link>
-      <pubDate>Tue, 05 May 2015 02:48:32 +0900</pubDate>
-      
-      <guid>https://dceoy.github.io/blog/post/py_fabric_fabkit/</guid>
-      <description>dceoy/fabkit Linux や Mac を使うエンジニアが &amp;ldquo;.&amp;rdquo; から始まる設定ファイルをクラウドで管理することはあると思う.
+https://twitter.com/dceoy/status/599953191317311488 ツイートの情報は data/js/tweets/ 以下に JavaScript として保存されているので, 今回は ID 抽出前にこれらを 1 つの JSON にまとめた.</description></item><item><title>Fabric による開発環境の管理</title><link>//dceoy.github.io/blog/post/py_fabric_fabkit/</link><pubDate>Tue, 05 May 2015 02:48:32 +0900</pubDate><guid>//dceoy.github.io/blog/post/py_fabric_fabkit/</guid><description>dceoy/fabkit Linux や Mac を使うエンジニアが &amp;ldquo;.&amp;rdquo; から始まる設定ファイルをクラウドで管理することはあると思う.
 自分も Zsh や Vim を使うので .zshrc や .vimrc などを GitHub に置いている.
 新しい環境でも dotfiles を clone してシンボリックリンクを貼れば, すぐに使い慣れたシェルやエディターを使えて便利.
 &amp;hellip; と, 初めはそれだけだったが, 次第にシェルやエディタ以外の環境も同じようにしたいと考え始め, そのためのスクリプトもリポジトリに置くようになった.
@@ -66,8 +29,4 @@ Fabric も同様, プロビジョニングの自動化に使えるが, 上記の
 Fabric は Python で書かれており, pip や easy_install からインストールできる.
 現時点では Python 3 に対応していない.
 $ pip install -U fabric タスクの実行は以下の通り.
-$ fab [options] &amp;lt;command&amp;gt;[:arg1,arg2=val2,host=foo,hosts=&amp;#39;h1;h2&amp;#39;,.</description>
-    </item>
-    
-  </channel>
-</rss>
+$ fab [options] &amp;lt;command&amp;gt;[:arg1,arg2=val2,host=foo,hosts=&amp;#39;h1;h2&amp;#39;,.</description></item></channel></rss>

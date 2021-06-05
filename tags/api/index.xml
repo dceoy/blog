@@ -1,33 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>api on Lorem Ipsum</title>
-    <link>https://dceoy.github.io/blog/tags/api/</link>
-    <description>Recent content in api on Lorem Ipsum</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 19 May 2015 22:16:50 +0900</lastBuildDate>
-    
-	<atom:link href="https://dceoy.github.io/blog/tags/api/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Twitter API から取得できない古いツイートを削除する</title>
-      <link>https://dceoy.github.io/blog/post/py_twitter_deltw/</link>
-      <pubDate>Tue, 19 May 2015 22:16:50 +0900</pubDate>
-      
-      <guid>https://dceoy.github.io/blog/post/py_twitter_deltw/</guid>
-      <description>del-tw Twitter API のユーザータイムライン取得は, 最新の 3,200 ツイートまでに限られる.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>api on Lorem Ipsum</title><link>//dceoy.github.io/blog/tags/api/</link><description>Recent content in api on Lorem Ipsum</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright><lastBuildDate>Tue, 19 May 2015 22:16:50 +0900</lastBuildDate><atom:link href="//dceoy.github.io/blog/tags/api/index.xml" rel="self" type="application/rss+xml"/><item><title>Twitter API から取得できない古いツイートを削除する</title><link>//dceoy.github.io/blog/post/py_twitter_deltw/</link><pubDate>Tue, 19 May 2015 22:16:50 +0900</pubDate><guid>//dceoy.github.io/blog/post/py_twitter_deltw/</guid><description>del-tw Twitter API のユーザータイムライン取得は, 最新の 3,200 ツイートまでに限られる.
 このため, API 経由でツイートを削除するサービスは 3,200 より古いツイートを削除できない.
 これを解決すべく, 古いツイートも削除するコードを書いた.
 具体的には, 以下の手順で行う.
-  Twitter から Archive (全ツイート履歴) をダウンロード Archive から過去のツイートの Status ID を抽出 OAuth 認証後, Status ID で REST API を叩き, ツイートを削除   README に書いたプロセスも上記に従うが, こちらはアーカイブされたツイートを全て削除するので, 取捨選択する場合には適宜対応する.
+Twitter から Archive (全ツイート履歴) をダウンロード Archive から過去のツイートの Status ID を抽出 OAuth 認証後, Status ID で REST API を叩き, ツイートを削除 README に書いたプロセスも上記に従うが, こちらはアーカイブされたツイートを全て削除するので, 取捨選択する場合には適宜対応する.
 Your Twitter Archive Twitter では自分のツイートのアーカイブが zip ファイルで提供される.
 中身は HTML や JavaScript で, index.html を開いてツイートをブラウズする.
 ここで個々のツイートのリンクを開けば URL から Status ID を確認可能.
 以下の例では末尾の数字が ID.
-https://twitter.com/dceoy/status/599953191317311488  ツイートの情報は data/js/tweets/ 以下に JavaScript として保存されているので, 今回は ID 抽出前にこれらを 1 つの JSON にまとめた.</description>
-    </item>
-    
-  </channel>
-</rss>
+https://twitter.com/dceoy/status/599953191317311488 ツイートの情報は data/js/tweets/ 以下に JavaScript として保存されているので, 今回は ID 抽出前にこれらを 1 つの JSON にまとめた.</description></item></channel></rss>

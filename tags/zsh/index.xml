@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>zsh on Lorem Ipsum</title>
-    <link>https://dceoy.github.io/blog/tags/zsh/</link>
-    <description>Recent content in zsh on Lorem Ipsum</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
-    <lastBuildDate>Tue, 05 May 2015 02:48:32 +0900</lastBuildDate>
-    
-	<atom:link href="https://dceoy.github.io/blog/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Fabric による開発環境の管理</title>
-      <link>https://dceoy.github.io/blog/post/py_fabric_fabkit/</link>
-      <pubDate>Tue, 05 May 2015 02:48:32 +0900</pubDate>
-      
-      <guid>https://dceoy.github.io/blog/post/py_fabric_fabkit/</guid>
-      <description>dceoy/fabkit Linux や Mac を使うエンジニアが &amp;ldquo;.&amp;rdquo; から始まる設定ファイルをクラウドで管理することはあると思う.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>zsh on Lorem Ipsum</title><link>//dceoy.github.io/blog/tags/zsh/</link><description>Recent content in zsh on Lorem Ipsum</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright><lastBuildDate>Tue, 05 May 2015 02:48:32 +0900</lastBuildDate><atom:link href="//dceoy.github.io/blog/tags/zsh/index.xml" rel="self" type="application/rss+xml"/><item><title>Fabric による開発環境の管理</title><link>//dceoy.github.io/blog/post/py_fabric_fabkit/</link><pubDate>Tue, 05 May 2015 02:48:32 +0900</pubDate><guid>//dceoy.github.io/blog/post/py_fabric_fabkit/</guid><description>dceoy/fabkit Linux や Mac を使うエンジニアが &amp;ldquo;.&amp;rdquo; から始まる設定ファイルをクラウドで管理することはあると思う.
 自分も Zsh や Vim を使うので .zshrc や .vimrc などを GitHub に置いている.
 新しい環境でも dotfiles を clone してシンボリックリンクを貼れば, すぐに使い慣れたシェルやエディターを使えて便利.
 &amp;hellip; と, 初めはそれだけだったが, 次第にシェルやエディタ以外の環境も同じようにしたいと考え始め, そのためのスクリプトもリポジトリに置くようになった.
@@ -28,8 +9,4 @@ Fabric も同様, プロビジョニングの自動化に使えるが, 上記の
 Fabric は Python で書かれており, pip や easy_install からインストールできる.
 現時点では Python 3 に対応していない.
 $ pip install -U fabric タスクの実行は以下の通り.
-$ fab [options] &amp;lt;command&amp;gt;[:arg1,arg2=val2,host=foo,hosts=&amp;#39;h1;h2&amp;#39;,.</description>
-    </item>
-    
-  </channel>
-</rss>
+$ fab [options] &amp;lt;command&amp;gt;[:arg1,arg2=val2,host=foo,hosts=&amp;#39;h1;h2&amp;#39;,.</description></item></channel></rss>

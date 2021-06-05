@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>markdown on Lorem Ipsum</title>
-    <link>https://dceoy.github.io/blog/tags/markdown/</link>
-    <description>Recent content in markdown on Lorem Ipsum</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright>
-    <lastBuildDate>Thu, 30 Apr 2015 00:53:48 +0900</lastBuildDate>
-    
-	<atom:link href="https://dceoy.github.io/blog/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Hugo でブログを作った</title>
-      <link>https://dceoy.github.io/blog/post/hugo_blog/</link>
-      <pubDate>Thu, 30 Apr 2015 00:53:48 +0900</pubDate>
-      
-      <guid>https://dceoy.github.io/blog/post/hugo_blog/</guid>
-      <description>以前, はてなブログで Web 関連の技術ブログを書いていたが, 無料プランでは広告が出るので自分でビルドした.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>markdown on Lorem Ipsum</title><link>//dceoy.github.io/blog/tags/markdown/</link><description>Recent content in markdown on Lorem Ipsum</description><generator>Hugo -- gohugo.io</generator><copyright>Copyright (c) 2015-2018 dceoy; all rights reserved.</copyright><lastBuildDate>Thu, 30 Apr 2015 00:53:48 +0900</lastBuildDate><atom:link href="//dceoy.github.io/blog/tags/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo でブログを作った</title><link>//dceoy.github.io/blog/post/hugo_blog/</link><pubDate>Thu, 30 Apr 2015 00:53:48 +0900</pubDate><guid>//dceoy.github.io/blog/post/hugo_blog/</guid><description>以前, はてなブログで Web 関連の技術ブログを書いていたが, 無料プランでは広告が出るので自分でビルドした.
 作成に際し, 知り合いのエンジニアが使っていた Python 製 Sphinx ベースの Tinkerer というツールにも興味を持ったが, reST でなく Markdown で書きたいので他のものを探した.
 当初, 過去に試したことがあった Ruby 製の Octopress を考えたが, 移行した人のブログ記事を読んで, 最終的に Hugo を使うことにした.
 Hugo Go で書かれた静的サイトエンジン.
@@ -27,8 +8,4 @@ $ go get -v github.com/spf13/hugo Mac OS X では Homebrew からもインスト
 また, バイナリでも配布されている.
 記事は Markdown で書き, ビルドインサーバーでプレビューできる.
 以下はテーマ nofancy を指定してサーバーを起動する例.
-$ hugo server -w -D -t nofancy Wercker CI ブログのホストには GitHub Pages を利用し, 公式のチュートリアルを参考に, Wercker CI でデプロイまで自動化した.</description>
-    </item>
-    
-  </channel>
-</rss>
+$ hugo server -w -D -t nofancy Wercker CI ブログのホストには GitHub Pages を利用し, 公式のチュートリアルを参考に, Wercker CI でデプロイまで自動化した.</description></item></channel></rss>
